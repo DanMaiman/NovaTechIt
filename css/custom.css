@@ -26,8 +26,7 @@ h1.jumbo {
 
 /*NAVBAR_styling*/
 #logo {
-  max-width:100px;
-  margin-top: -7px;
+  max-height:70px;
 }
 
 .navbar-inverse {
@@ -41,6 +40,11 @@ h1.jumbo {
 
 .navbar-inverse .navbar-nav>li>a {
   color: black;
+  line-height: 40px;
+}
+
+.navbar-brand {
+  padding: 0;
 }
 
 .hvr-overline-from-center:before {
