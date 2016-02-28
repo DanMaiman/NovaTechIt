@@ -3,10 +3,6 @@ body {
 
 }
 
-nav {
-  z-index: 2000;
-}
-
 h1 {
 
 }
@@ -25,6 +21,10 @@ h1.jumbo {
 }
 
 /*NAVBAR_styling*/
+navbar-fixed-top {
+  z-index: 2000;
+}
+
 #logo {
   max-width:100px;
   margin-top: -7px;
