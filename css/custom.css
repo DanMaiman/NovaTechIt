@@ -3,6 +3,10 @@ body {
 
 }
 
+nav {
+  z-index: 2000;
+}
+
 h1 {
 
 }
@@ -15,23 +19,35 @@ p{
 
 }
 
-/*was weirdly deleted?*/
-/* Nav */
-
-
-
-
-
-
-/*endblacktexttransition*/
-
-
-/* End Nav */
-/*end of weird deletion problem*/
 
 h1.jumbo {
 
 }
+
+/*NAVBAR_styling*/
+#logo {
+  max-width:100px;
+  margin-top: -7px;
+}
+
+.navbar-inverse {
+  background-color: white;
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus  {
+  color: #550000;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: black;
+}
+
+.hvr-overline-from-center:before {
+  background: #AA3939;
+}
+
+/*END_nabar_styling*/
 
 .fture {
   height: 100vh;
