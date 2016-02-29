@@ -26,7 +26,7 @@ h1.jumbo {
 }
 
 /*NAVBAR_styling*/
-navbar-fixed-top {
+.navbar-fixed-top {
   z-index: 2000;
 }
 
