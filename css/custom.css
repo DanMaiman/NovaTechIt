@@ -34,16 +34,16 @@ h1.jumbo {
   max-height:70px;
 }
 
-.navbar-inverse {
+.navbar-default {
   background-color: white;
   border-color: transparent;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus  {
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus  {
   color: #550000;
 }
 
-.navbar-inverse .navbar-nav>li>a {
+.navbar-default .navbar-nav>li>a {
   color: black;
   line-height: 40px;
 }
@@ -62,6 +62,14 @@ h1.jumbo {
   z-index: 1500;
 }
 
+.vid-cont {
+  background-image: url("../video/hello-world.jpg");
+  background-size: cover;
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+}
+
 
 .fture {
   height: 100vh;
@@ -76,54 +84,48 @@ h1.jumbo {
 }
 
 .hello {
-  z-index: 1000;
   position: absolute;
-  top: 35%;
+  transform: translateY(-50%);
+  top: 50%;
+  width: 100%;
   text-align: center;
-  width: inherit;
   color: white;
 }
 
 /*COVER VIDEO helloworld*/
-.homepage-hero-module {
-  border-right: none;
-  border-left: none;
-  position: relative;
-}
-.no-video .video-container video,
-.touch .video-container video {
-  display: none;
-}
-.no-video .video-container .poster,
-.touch .video-container .poster {
-  display: block !important;
-}
-.video-container {
-  position: relative;
-  bottom: 0%;
-  left: 0%;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  background: #000;
-}
-.video-container .poster img {
-  width: 100%;
-  bottom: 0;
-  position: absolute;
-}
-.video-container .filter {
-  z-index: 100;
-  position: absolute;
-  background: rgba(0, 0, 0, 0);
-  width: 100%;
-}
-.video-container video {
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-}
-.video-container video.fillWidth {
-  width: 100%;
+
+video { 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    background: url('../video/hello-world.jpg') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
 }
 /* end of coverr */
+
+@media screen and (min-aspect-ratio: 16/9) { 
+    video {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    video {
+      display: none;
+    }
+
+    #logo {
+        max-height: 50px;
+    }
+
+    .container>.navbar-header {
+      margin: 0;
+    }
+
+    .navbar-header button {
+      margin-right: 0;
+    }
+}
