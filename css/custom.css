@@ -1,7 +1,7 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 @font-face {
-  font-family: nobile;
-  src: url(../Fonts/nobile_bold_italic.ttf);
+  font-family: nobel;
+  src: url(../Fonts/nobel.otf);
 }
 
 body {
@@ -18,7 +18,8 @@ h1 {
 }
 
 h2 {
-
+  text-transform: capitalize;
+  font-family: 'nobel', sans-serif;
 }
 
 p{
@@ -30,7 +31,7 @@ h1.jumbo {
   text-transform: uppercase;
   width: 70%;
   margin: auto;
-  font-family: 'nobile', sans-serif;
+  font-family: 'nobel', sans-serif;
   color: white;
 }
 
