@@ -1,4 +1,9 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
+@font-face {
+  font-family: nobile;
+  src: url(../Fonts/nobile_bold_italic.ttf);
+}
+
 body {
 
 }
@@ -25,7 +30,7 @@ h1.jumbo {
   text-transform: uppercase;
   width: 70%;
   margin: auto;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'nobile', sans-serif;
   color: white;
 }
 
