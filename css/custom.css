@@ -40,7 +40,7 @@ h1.jumbo {
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus  {
-  color: #550000;
+  color: #801515;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -94,7 +94,7 @@ h1.jumbo {
 
 /*COVER VIDEO helloworld*/
 
-video { 
+video {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -106,7 +106,7 @@ video {
 }
 /* end of coverr */
 
-@media screen and (min-aspect-ratio: 16/9) { 
+@media screen and (min-aspect-ratio: 16/9) {
     video {
       width: 100%;
     }
