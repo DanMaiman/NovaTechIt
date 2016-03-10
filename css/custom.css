@@ -119,10 +119,9 @@ h1.jumbo {
 
 video {
     position: fixed;
-    top: 50%;
-    left: 50%;
+    top: 0;
+    left: 0;
     z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
     background: url('../video/hello-world.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
@@ -132,13 +131,24 @@ video {
 
 @media screen and (min-aspect-ratio: 16/9) and (min-width: 768px) {
     video {
-
+      width: 100%;
     }
 }
 
 @media screen and (max-aspect-ratio: 16/9) and (min-width: 768px) {
     video {
       height: 100%;
+    }
+}
+
+@media screen and (min-aspect-ratio: 3/2) and (min-width: 768px) {
+    
+}
+
+@media screen and (max-aspect-ratio: 3/2) and (min-width: 768px) {
+    .images img {
+      width: inherit;
+      height: 100vh;
     }
 }
 
