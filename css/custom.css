@@ -36,8 +36,9 @@ h1.jumbo {
 }
 
 /*NAVBAR_styling*/
-.navbar-fixed-top {
+.navbar {
   z-index: 2000;
+  vertical-align: none;
 }
 
 #logo {
@@ -72,20 +73,12 @@ h1.jumbo {
   z-index: 1500;
 }
 
-.vid-cont {
-  background-image: url("../video/hello-world.jpg");
-  background-size: cover;
-  height: 100vh;
-  position: fixed;
-  width: 100%;
-}
+
+
 
 
 .fture {
-  height: 100vh;
   text-align: center;
-  min-height: 500px;
-  background-color: white;
 }
 
 .fture h1 {
@@ -93,13 +86,33 @@ h1.jumbo {
   font-size: 6em;
 }
 
+.btWeb {
+  overflow: hidden;
+}
+
 .hello {
-  position: absolute;
   transform: translateY(-50%);
   top: 50%;
   width: 100%;
   text-align: center;
   color: white;
+}
+
+.images img {
+  width: 100%;
+  position: fixed;
+}
+
+#img-2 {
+  opacity: 0;
+}
+
+#img-3{
+  opacity: 0;
+}
+
+#img-4 {
+  opacity: 0;
 }
 
 /*COVER VIDEO helloworld*/
@@ -113,18 +126,56 @@ video {
     background: url('../video/hello-world.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
+    overflow: hidden;
 }
 /* end of coverr */
 
-@media screen and (min-aspect-ratio: 16/9) {
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 768px) {
     video {
-      width: 100%;
+
+    }
+}
+
+@media screen and (max-aspect-ratio: 16/9) and (min-width: 768px) {
+    video {
+      height: 100%;
     }
 }
 
 @media screen and (max-width: 767px) {
     video {
       display: none;
+    }
+
+    .jumbo-set {
+      background-image: url("../video/hello-world.jpg");
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+      vertical-align: 
+    }
+
+    .hello {
+      transform: translateY(0%);
+      top: 50%;
+      width: 100%;
+      text-align: center;
+      color: white;
+    }
+
+    .vert-cont {
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      transform: translateY(100%);
+    }
+
+    .images img {
+      width: 300%;
+      -webkit-transform: translateX(-30%);
+      -ms-transform: translateX(-30%);
+      -o-transform: translateX(-30%);
+      transform: translateX(-30%);
     }
 
     #logo {
