@@ -4,13 +4,13 @@
   src: url(../Fonts/nobel.otf);
 }
 
-body {
 
+body {
+  font-family: 'nobel', sans-serif;
 }
 
 nav {
-font-family: 'PT Sans Narrow', sans-serif;
-font-size: 25px;
+  font-size: 25px;
 }
 
 h1 {
@@ -18,8 +18,7 @@ h1 {
 }
 
 h2 {
-  text-transform: capitalize;
-  font-family: 'nobel', sans-serif;
+
 }
 
 p{
@@ -30,9 +29,87 @@ p{
 h1.jumbo {
   text-transform: uppercase;
   width: 70%;
-  margin: auto;
-  font-family: 'nobel', sans-serif;
+  margin: 30px auto 50px auto;
+  font-family: 'Montserrat', sans-serif;
   color: white;
+  font-size: 5em;
+}
+
+h2.jumbo {
+  margin-bottom: 50px;
+  width: 70%;
+  margin: 20px auto 50px auto;
+}
+
+.btn-lg {
+    letter-spacing: 2px;
+    font-size: 3em;
+    padding: 18px 28px;
+    line-height: 1.3333333;
+    border-radius: 2.5em;
+}
+
+.arrow {
+    position: absolute;
+    left: 50%;
+}
+
+a.scrollTo {
+    position: absolute;
+    margin-bottom: 0;
+    font-size: 8em;
+    color: white;
+    transform: translateX(-50%);
+}
+
+
+
+.bounceInUp {
+  -webkit-animation-duration: .8s;
+  -webkit-animation-name: bounceInUp;
+  -webkit-animation-iteration-count: infinite;
+  -o-animation-duration: .8s;
+  -o-animation-name: bounceInUp;
+  -o-animation-iteration-count: infinite; 
+  animation-duration: .8s;
+  animation-name: bounceInUp;
+  animation-iteration-count: infinite;  
+  animation-duration: .8s;
+  animation-name: bounceInUp;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -o-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes bounceInUp {
+    from {
+      padding-top: 10px; 
+    }
+
+    to {
+      padding-top: -10px;
+      }
+}
+
+@-o-keyframes bounceInUp {
+    from {
+      padding-top: 10px; 
+    }
+
+    to {
+      padding-top: -10px;
+      }
+}
+
+@keyframes bounceInUp {
+    from {
+      padding-top: 10px; 
+    }
+
+    to {
+      padding-top: -10px;
+      }
 }
 
 /*NAVBAR_styling*/
