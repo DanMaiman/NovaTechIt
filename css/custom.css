@@ -28,7 +28,7 @@ p{
 
 h1.jumbo {
   text-transform: uppercase;
-  width: 70%;
+  width: 1000px;
   margin: 30px auto 50px auto;
   font-family: 'Montserrat', sans-serif;
   color: white;
@@ -37,7 +37,7 @@ h1.jumbo {
 
 h2.jumbo {
   margin-bottom: 50px;
-  width: 70%;
+  width: 1000px;
   margin: 20px auto 50px auto;
 }
 
