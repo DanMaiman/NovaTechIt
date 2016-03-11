@@ -5,6 +5,7 @@ jQuery( document ).ready(function($) {
     $('#fullpage').fullpage({
         responsiveWidth: 767,
 
+
         afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
 
@@ -23,8 +24,20 @@ jQuery( document ).ready(function($) {
 
             if (index == 4) {
                 $('#img-3').addClass('fadeIn').removeClass('fadeOut');
-                $('#img-4').removeClass('fadeIn').addClass('fadeOut');
+                if($('#img-4').hasClass('fadeIn')) {
+                    $('#img-4').removeClass('fadeIn').addClass('fadeOut');
+                }
             }
+
+            if (index == 5) {
+                $('#img-4').addClass('fadeIn').removeClass('fadeOut');
+            }
+
+                $('.feat-head-l[data-index="' + index + '" ]').addClass('animated slideInLeft');
+                $('.feat-head-r[data-index="' + index + '" ]').addClass('animated slideInRight');
+                $('.feat-p-l[data-index="' + index + '" ]').addClass('animated slideInLeft');
+                $('.feat-p-r[data-index="' + index + '" ]').addClass('animated slideInRight');
+                $('.feat[data-index!="' + index + '" ]').removeClass('slideInLeft slideInRight animated');
         }
     });
 
