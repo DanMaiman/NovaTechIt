@@ -6,6 +6,8 @@ jQuery( document ).ready(function($) {
     });
 
     $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
+        menu: '#myMenu',
         responsiveWidth: 767,
 
         afterLoad: function(anchorLink, index){
@@ -16,27 +18,10 @@ jQuery( document ).ready(function($) {
             if ($(window).width() > 767) {
                 //using index
                 console.log(index);
-                if (index == 2 && $('#img-2').hasClass('fadeIn')) {
-                    $('#img-2').removeClass('fadeIn').addClass('fadeOut');
+                if (index > 1 && index < 6) {
+                    $('img[data-img="' + index + '" ]').removeClass('fadeOut').addClass('fadeIn');
+                    $('img[data-img!="' + index + '" ]').removeClass('fadeIn').addClass('fadeOut');
                 }
-
-                if (index == 3) {
-                    $('#img-2').addClass('fadeIn').removeClass('fadeOut');
-                    if($('#img-3').hasClass('fadeIn')) {
-                        $('#img-3').removeClass('fadeIn').addClass('fadeOut');
-                    }
-                }
-
-                if (index == 4) {
-                    $('#img-3').addClass('fadeIn').removeClass('fadeOut');
-                    if($('#img-4').hasClass('fadeIn')) {
-                        $('#img-4').removeClass('fadeIn').addClass('fadeOut');
-                    }
-                }
-
-                if (index == 5) {
-                    $('#img-4').addClass('fadeIn').removeClass('fadeOut');
-                } 
 
                 if (index != 6) {
                     $('.feat-head-l[data-index="' + index + '" ]').addClass('animated slideInLeft');
