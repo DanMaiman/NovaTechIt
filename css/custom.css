@@ -144,7 +144,7 @@ a.scrollTo {
       height: 100%;
     }
 
-/* SVG draw circle stroke */
+/* SVG draw circle stroke */  
 
 
 
@@ -333,15 +333,9 @@ a.scrollTo {
 .shimmer {
   text-align: center;
   color: rgba(255,255,255,0.5);
-<<<<<<< Updated upstream
   background: -webkit-gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
   background: -moz-gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
-=======
-  background: -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
->>>>>>> Stashed changes
+  background: gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));  
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: inherit;
@@ -453,7 +447,7 @@ video {
 }
 
 @media screen and (min-aspect-ratio: 3/2) and (min-width: 768px) {
-
+    
 }
 
 @media screen and (max-aspect-ratio: 3/2) and (min-width: 768px) {
@@ -468,32 +462,8 @@ video {
       font-size: 1em;
     }
 
-<<<<<<< Updated upstream
     p {
       font-size: 2em;
-=======
-    .jumbo-set {
-      background-image: url("../video/hello-world.jpg");
-      background-size: cover;
-      height: 100vh;
-      width: 100%;
-      vertical-align:
-    }
-
-    .hello {
-      transform: translateY(0%);
-      top: 50%;
-      width: 100%;
-      text-align: center;
-      color: white;
-    }
-
-    .vert-cont {
-      -webkit-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-      -o-transform: translateY(100%);
-      transform: translateY(100%);
->>>>>>> Stashed changes
     }
 
     .images img {
@@ -559,7 +529,7 @@ video {
       background-size: cover;
       height: 100%;
       width: 100%;
-      top: 0;
+      top: 0; 
     }
 
     .vert-cont {
