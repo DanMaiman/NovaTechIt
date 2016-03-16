@@ -1,4 +1,5 @@
 jQuery( document ).ready(function($) {
+    $('.filter-load').addClass('hidden');
     var scrollIndex = 0;
     $('#img-1').addClass('fadeIn');
     $('.scrollTo').click(function(){
@@ -21,6 +22,14 @@ jQuery( document ).ready(function($) {
                 if (index > 1 && index < 6) {
                     $('img[data-img="' + index + '" ]').removeClass('fadeOut').addClass('fadeIn');
                     $('img[data-img!="' + index + '" ]').removeClass('fadeIn').addClass('fadeOut');
+                }
+
+                if (index == 6) {
+                    $('img[data-img="5" ]').removeClass('fadeOut').addClass('fadeIn');
+                    $('img[data-img!="5" ]').removeClass('fadeIn').addClass('fadeOut');
+                    $('.feat-head-r[data-index="5" ]').addClass('animated slideInRight');
+                    $('.feat-p-l[data-index="5" ]').addClass('animated slideInLeft');
+                    $('.feat[data-index!="5" ]').removeClass('slideInLeft slideInRight animated');
                 }
 
                 if (index != 6) {
