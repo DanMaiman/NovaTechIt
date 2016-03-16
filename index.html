@@ -54,7 +54,7 @@
       <img class="ftImage animated" id="img-1" src="photos/office.jpg" data-img="2">
       <img class="ftImage animated fadeOut" id="img-2" src="photos/office-ppl.jpg" data-img="3">
       <img class="ftImage animated fadeOut" id="img-3" src="photos/doctor.jpg" data-img="4">
-      <img class="ftImage animated fadeOut" id="img-4" src="photos/mother.jpg" data-img="5">  
+      <img class="ftImage animated fadeOut" id="img-4" src="photos/mother.jpg" data-img="5">
       <div class="filter"></div>
     </div>
 
@@ -74,37 +74,39 @@
   <div id="fullpage">
       <div class="section hello btWeb" id="one">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img src="photos/logo2.png" id="logo" /></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <!--new code nav bar-->
-          <ul class="nav navbar-nav navbar-right">
-            <li id="about">
-              <a class="hvr-overline-from-center" href="#about">About</a>
-            </li>
-            <li id="services">
-              <a class="hvr-overline-from-center" href="#services">Services</a>
-            </li>
-            <li id="client">
-              <a class="hvr-overline-from-center" href="#client">Clients</a>
-            </li>
-            <li id="contact">
-              <a class="hvr-overline-from-center" href="#contact">Contact</a>
-            </li>
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="photos/logo2.png" id="logo" /></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <!--new code nav bar-->
+              <ul class="nav navbar-nav navbar-left">
+                <li id="about">
+                  <a class="hvr-underline-from-right" href="#about">About</a>
+                </li>
+                <li id="services">
+                  <a class="hvr-underline-from-right" href="#services">Services</a>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li id="client">
+                  <a class="hvr-underline-from-left" href="#client">Clients</a>
+                </li>
+                <li id="contact">
+                  <a class="hvr-underline-from-left" href="#contact">Contact</a>
+                </li>
+              </ul>
 
-          </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
+            </div><!--/.navbar-collapse here is altered UL navbarleftandright------------------------------------>
+          </div>
+        </nav>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
@@ -153,16 +155,34 @@
         <p class="feat feat-p feat-p-l init" data-index="5">Nullam eleifend nunc lobortis, euismod enim eu, pulvinar velit. Quisque congue pharetra facilisis. Aliquam ut nisi vel libero cursus efficitur.</p>
         <a href="#" class="btn btn-primary btn-lg hvr-grow-shadow" role="button"><span class="btn-e">Get in Touch</span></a>
       </div>
-  
+
 
       <!-- /END THE FEATURETTES -->
-    <div class="section fp-auto-height" id="six" data-scroll="5">
-      <div class="footer">
-          <img class="ftLogo" src="photos/nova_logo.png"><br>
-          <img class="ftVendors" src="photos/vendors.png">
-      </div>
-    </div>
-  </div>
+<div class="section fp-auto-height" id="six" data-scroll="5">
+<div class="footer">
+  <div class="bottom">
+    <div id="train">
+          <div class="row">
+              <div class="col-lg-2 col-lg-offset-1 text-center">
+                      <a href="#">Link 1</a>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                      <a href="#">Link 2</a>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                      <a href="#">Link 3</a>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                      <a href="#">Link 4</a>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                      <a href="#">Link 5</a>
+                  </div>
+          </div>
+    </div> <!--row-->
+  </div><!--container-->
+</div>
+</div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->

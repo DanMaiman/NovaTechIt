@@ -28,6 +28,18 @@ p{
   color: white;
 }
 
+/*HERE IS THE NEW SPACING TO BRING LINK CLOSER TO THE NAV BRAND--------------------------*/
+.navbar-collapse.collapse {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.hvr-underline-from-left:before, .hvr-underline-from-right:before{
+  background-color: #AC3737;
+  bottom: 15px;
+  top: 18;
+}
+
 .filter-load {
   position: fixed;
   width:100%;
@@ -170,7 +182,7 @@ a.scrollTo {
       height: 100%;
     }
 
-/* SVG draw circle stroke */  
+/* SVG draw circle stroke */
 
 
 
@@ -231,12 +243,15 @@ a.scrollTo {
   vertical-align: none;
 }
 
+/*added padding to the top of the logo, changed size to MAX-----------------------------------------------*/
 #logo {
-  max-height:70px;
+  max-height:300px;
+  padding-top: 8px;
 }
 
+/*added background color, color white border color--------------------------------------*/
 .navbar-default {
-  background-color: white;
+  background-color: transparent;
   border-color: transparent;
 }
 
@@ -244,13 +259,26 @@ a.scrollTo {
   color: #801515;
 }
 
+/*TRYING TO EQUALLY SPACE OUT EACH ELEMENT IN NAVBAR--------------------------------------------*/
 .navbar-default .navbar-nav>li>a {
-  color: black;
+  color: white;
   line-height: 40px;
+  padding: 13px;
+  margin-right: 100px;
 }
 
+/*added this to offset the new padding and pegin right above-----------------------------------------*/
+.navbar-right {
+  margin-right: -130px;
+}
+
+/*HERE IS THE CENTERING OF THE LOGO ------------------------------------------------------*/
 .navbar-brand {
   padding: 0;
+  position: absolute;
+  left: 50%;
+  margin-left: -93.8985px !important;  /* 50% of logo width */
+  display: block;
 }
 
 .hvr-overline-from-center:before {
@@ -361,7 +389,7 @@ a.scrollTo {
   color: rgba(255,255,255,0.5);
   background: -webkit-gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
   background: -moz-gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));  
+  background: gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: inherit;
@@ -437,7 +465,7 @@ video {
 
 .footer {
   height:300px;
-  background-color: white;
+  background-color: #AC3737;
 }
 
 .ftLogo {
@@ -473,7 +501,7 @@ video {
 }
 
 @media screen and (min-aspect-ratio: 3/2) and (min-width: 768px) {
-    
+
 }
 
 @media screen and (max-aspect-ratio: 3/2) and (min-width: 768px) {
@@ -560,7 +588,7 @@ video {
       background-size: cover;
       height: 100%;
       width: 100%;
-      top: 0; 
+      top: 0;
     }
 
     .vert-cont {
@@ -591,9 +619,6 @@ video {
       font-size: 3em;
     }
 
-    .init {
-
-    }
 
     .feat-head-l {
       text-align: center;
@@ -624,9 +649,3 @@ video {
     }
 
 /* End Feat - Start Footer */
-
-    .ftVendors {
-      display: none;
-    }
-
-}
