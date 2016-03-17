@@ -170,7 +170,7 @@ a.scrollTo {
       height: 100%;
     }
 
-/* SVG draw circle stroke */  
+/* SVG draw circle stroke */
 
 
 
@@ -236,16 +236,16 @@ a.scrollTo {
 }
 
 .navbar-default {
-  background-color: white;
-  border-color: transparent;
+  background-color: transparent;
+  border-color: white;
 }
 
 .navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus  {
-  color: #801515;
+  color: #AA3939;
 }
 
 .navbar-default .navbar-nav>li>a {
-  color: black;
+  color: white;
   line-height: 40px;
 }
 
@@ -364,7 +364,7 @@ a.scrollTo {
   color: rgba(255,255,255,0.5);
   background: -webkit-gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
   background: -moz-gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
-  background: gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));  
+  background: gradient(linear, left top, right top, from(#666), to(#666), color-stop(0.5, #fff));
   background-repeat: no-repeat;
   background-position: 0 0;
   background-color: inherit;
@@ -470,7 +470,7 @@ video {
 }
 
 @media screen and (min-aspect-ratio: 3/2) and (min-width: 768px) {
-    
+
 }
 
 @media screen and (max-aspect-ratio: 3/2) and (min-width: 768px) {
@@ -557,7 +557,7 @@ video {
       background-size: cover;
       height: 100%;
       width: 100%;
-      top: 0; 
+      top: 0;
     }
 
     .vert-cont {
@@ -634,6 +634,10 @@ video {
       left: 50%;
       transform: translateX(-50%);
       margin-left: 0;
+    }
+
+    .navbar>.container .navbar-brand, .navbar>.container-fluid .navbar-brand {
+      margin-left: 0px;
     }
 
     ul.nav {
