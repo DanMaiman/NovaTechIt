@@ -444,13 +444,7 @@ video {
 }
 
 .ftLogo {
-  position: relative;
   margin: 40px auto 0 auto;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 .ftVendors {
