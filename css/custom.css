@@ -251,6 +251,9 @@ a.scrollTo {
 
 .navbar-brand {
   padding: 0;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hvr-overline-from-center:before {
@@ -629,4 +632,25 @@ video {
       display: none;
     }
 
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 0;
+    }
+
+    ul.nav {
+      width: 100%;
+    }
+
+    #navbar>ul>li {
+      width:20%;
+    }
+
+    .navbar-right {
+      margin-right: 0px;
+    }
 }
