@@ -58,6 +58,10 @@ h2.jumbo {
   margin: 20px auto 50px auto;
 }
 
+.btn-jumbo {
+  margin-top: 50px;
+}
+
 .btn-lg {
     letter-spacing: 2px;
     font-size: 3em;
@@ -595,5 +599,3 @@ video {
       margin-right: 0px;
     }
 }
-
-
