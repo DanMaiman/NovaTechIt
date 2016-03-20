@@ -46,7 +46,7 @@ p {
 
 h1.jumbo {
   text-transform: uppercase;
-  width: 70%;
+  width: 100%;
   margin: 30px auto 50px auto;
   color: white;
   font-size: 5em;
@@ -54,7 +54,7 @@ h1.jumbo {
 
 h2.jumbo {
   margin-bottom: 50px;
-  width: 70%;
+  width: 100%;
   margin: 20px auto 50px auto;
 }
 
@@ -234,7 +234,8 @@ a.scrollTo {
 }
 
 #logo {
-  max-height:70px;
+  max-height:80px;
+  margin: 5px auto;
 }
 
 .navbar-default {
@@ -248,7 +249,7 @@ a.scrollTo {
 
 .navbar-default .navbar-nav>li>a {
   color: white;
-  line-height: 40px;
+  line-height: 60px;
 }
 
 .navbar-brand {
