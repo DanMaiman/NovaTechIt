@@ -1,14 +1,22 @@
 jQuery( document ).ready(function($) {
-    
+    var images = $("img.ftImage");
+    var video = $("source")    
     var scrollIndex = 0;
     $('#img-1').addClass('fadeIn');
-    $(window).resize(function() {
-    if ($(window).width() > 959) {
-        $("body").append('<img src="path/to/img.jpg" class="responsive-image"/>');
-    } else {
-        $(".responsive-image").remove();
+
+    $(images).each(function(index) {
+        var dataSrc = $(this).attr("data-src");
+        var imgSrc = "photos/" + dataSrc + ".jpg";
+        $(this).attr("src", imgSrc);
+    });
+
+    if ($(window).width() > 767) {
+        $(video).each(function(index) {
+            var dataSrc = $(this).attr("data-vidsrc");
+            var vidSrc = dataSrc;
+            $(this).attr("src", vidSrc);
+        });
     }
-}).resize();
 
     $('#fullpage').fullpage({
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
