@@ -1,10 +1,14 @@
 jQuery( document ).ready(function($) {
-    $('.filter-load').addClass('hidden');
+    
     var scrollIndex = 0;
     $('#img-1').addClass('fadeIn');
-    $('.scrollTo').click(function(){
-        $.fn.fullpage.moveSectionDown();
-    });
+    $(window).resize(function() {
+    if ($(window).width() > 959) {
+        $("body").append('<img src="path/to/img.jpg" class="responsive-image"/>');
+    } else {
+        $(".responsive-image").remove();
+    }
+}).resize();
 
     $('#fullpage').fullpage({
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
@@ -90,6 +94,8 @@ jQuery( document ).ready(function($) {
                 }
         });
     }
+
+    $('.filter-load').addClass('hidden');
 
 });
 

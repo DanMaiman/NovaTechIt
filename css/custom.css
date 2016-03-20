@@ -497,6 +497,10 @@ video {
       transform: translateX(-30%);
     }
 
+    .dotstyle {
+      display: none;
+    }
+
     .filter {
       height: 1000%;
     }
