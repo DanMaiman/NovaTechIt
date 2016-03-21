@@ -444,6 +444,10 @@ hr {
       font-size: 2em;
     }
 
+    hr {
+      width: 250px;
+    }
+
     .images img {
       width: 250%;
       -webkit-transform: translateX(-30%);
@@ -467,7 +471,8 @@ hr {
 /* Navbar */
 
     #logo {
-        max-height: 50px;
+      max-height: 50px;
+      margin: 0px auto;
     }
 
     .container>.navbar-header {
@@ -476,6 +481,25 @@ hr {
 
     .navbar-header button {
       margin-right: 0;
+    }
+
+    .navbar-brand {
+      padding: 0;
+      position: absolute;
+      left: 15px;
+      -webkit-transform: none;
+      -ms-transform: none;
+      -o-transform: none;
+      transform: none;
+    }
+
+    .navbar-collapse {
+      background-color: rgba(255,255,255,0.8);
+    }
+
+    .navbar-default .navbar-nav>li>a {
+      color: black;
+      line-height: 40px;
     }
 
 /* End Navbar - Start Jumbo */
