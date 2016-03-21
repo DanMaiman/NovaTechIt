@@ -1,0 +1,40 @@
+.brother {
+  position: static;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  width: 100%;
+  top: 0;
+}
+
+.uncle {
+  position: static;
+  background: grey;
+  background-size: cover;
+  height: 350px;
+  width: 100%;
+  top: 0;
+}
+
+.bullet {
+  width: 100%;
+  position: relative;
+  top: 50%;
+  font-size: 25px;
+}
+
+.one {
+  background-image: url("../photos/office-ppl.jpg");
+}
+
+.three {
+  background-image: url("../photos/sky.jpg");
+}
+
+.five {
+  background-image: url("../photos/office-ppl.jpg");
+}
+
+.seven {
+  background-image: url("../photos/office-ppl.jpg");
+}
