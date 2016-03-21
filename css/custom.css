@@ -77,7 +77,7 @@ h2.jumbo {
     border: 0px;
 }
 
-.btn-primary.focus, .btn-primary:focus, .btn-primary.hover, .btn-primary:hover, .btn-primary.active, .btn-primary:active, .btn-primary:active:hover, .btn-primary:active:focus {
+.btn-primary.focus, .btn-primary:focus, .btn-primary.hover, .btn-primary:hover, .btn-primary.active, .btn-primary:active {
     color: #fff;
     background-color: rgba(170, 57, 57, .9);
     border-color: #fff;
@@ -255,13 +255,13 @@ a.scrollTo {
 .navbar-brand {
   padding: 0;
   position: absolute;
-  left: 15px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .hvr-overline-from-center:before {
   background: #AA3939;
 }
-
 
 /*END_nabar_styling*/
 
@@ -468,12 +468,6 @@ hr {
 
     #logo {
         max-height: 50px;
-        margin: 0px auto;
-    }
-
-
-    #home {
-      height: 0px;
     }
 
     .container>.navbar-header {
@@ -482,15 +476,6 @@ hr {
 
     .navbar-header button {
       margin-right: 0;
-    }
-
-    .navbar-collapse {
-      background-color: rgba(255, 255, 255, 0.8);
-    }
-
-    .navbar-default .navbar-nav>li>a {
-      color: black;
-      line-height: 40px;
     }
 
 /* End Navbar - Start Jumbo */
