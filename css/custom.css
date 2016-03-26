@@ -4,6 +4,11 @@
   src: url(../Fonts/nobel.otf);
 }
 
+a.navbar-brand {
+  left: 330px;
+  top: 150px;
+}
+
 
 body {
   font-family: 'nobel', sans-serif;
@@ -234,8 +239,9 @@ a.scrollTo {
 }
 
 #logo {
-  max-height:80px;
-  margin: 5px auto;
+  max-height:500px;
+  margin: -50px auto;
+  background-color: transparent;
 }
 
 .navbar-default {
@@ -635,5 +641,3 @@ hr {
       margin-right: 0px;
     }
 }
-
-
