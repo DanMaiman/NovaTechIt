@@ -16,6 +16,19 @@ p {
     line-height: 60px;
 }
 
+#navbar>ul>li {
+  width: initial;
+  float:right;
+}
+
+#navbar>ul>#home {
+  float: left;
+}
+
+#home img {
+  height: 50px;
+}
+
 .uncle .container {
   padding-top: 50px;
 }
