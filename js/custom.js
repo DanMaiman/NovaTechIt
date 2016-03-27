@@ -39,17 +39,6 @@ jQuery( document ).ready(function($) {
                 if (index == 6) {
                     $('img[data-img="5" ]').removeClass('fadeOut').addClass('fadeIn');
                     $('img[data-img!="5" ]').removeClass('fadeIn').addClass('fadeOut');
-                    $('.feat-head-r[data-index="5" ]').addClass('animated slideInRight');
-                    $('.feat-p-l[data-index="5" ]').addClass('animated slideInLeft');
-                    $('.feat[data-index!="5" ]').removeClass('slideInLeft slideInRight animated');
-                }
-
-                if (index != 6) {
-                    $('.feat-head-l[data-index="' + index + '" ]').addClass('animated slideInLeft');
-                    $('.feat-head-r[data-index="' + index + '" ]').addClass('animated slideInRight');
-                    $('.feat-p-l[data-index="' + index + '" ]').addClass('animated slideInLeft');
-                    $('.feat-p-r[data-index="' + index + '" ]').addClass('animated slideInRight');
-                    $('.feat[data-index!="' + index + '" ]').removeClass('slideInLeft slideInRight animated');
                 }
             
             } /*else {
