@@ -1,5 +1,29 @@
-body p {
+body {
+  position: relative;
+  top:-10px;
+}
+
+p {
   color: black;
+}
+
+.navbar-default {
+  background: rgba(255,255,255,0.8);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: black;
+    line-height: 60px;
+}
+
+.uncle .container {
+  padding-top: 50px;
+}
+
+.uncle ul {
+  font-size: 2em;
+  margin-left: 50px;
+  padding-top: 30px;
 }
 
 .brother {
@@ -12,9 +36,9 @@ body p {
 }
 
 .uncle {
-
+  text-align: left;
   position: absolute;
-  background: linear-gradient(rgba(255,0,0,0) 0%, white 25%, white 75%, rgba(255,0,0,0)100%);
+  background: linear-gradient(rgba(255,255,255,0.9) 0%, white 40%, white 60%, rgba(255,255,255,0.9)100%);
   background-size: cover;
   height: 400px;
   width: 100%;
@@ -57,4 +81,13 @@ body p {
 
 #eight {
   top:3000px;
+}
+
+#foot {
+  position: relative;
+  z-index: 100;
+}
+
+.ftLinks {
+  bottom:;
 }
