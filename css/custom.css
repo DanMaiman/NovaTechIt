@@ -394,13 +394,19 @@ video {
 
 .ftLogo {
   position: relative;
-  margin-top: 10px;
+  margin-top: 25px;
   width: 250px;
 }
 
 hr {
   border-color: #B9B9B9;
   width: 600px;
+}
+
+.ftServices p {
+  color: black;
+  font-size: 1.7em;
+  margin-top: 15px;
 }
 
 .ftLinks {
