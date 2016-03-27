@@ -38,6 +38,14 @@ p {
   color: white;
 }
 
+.fadeIn {
+  animation-duration: 2s;
+}
+
+.fadeout {
+  animation-duration: 2s;
+}
+
 
 
 .filter-load {
