@@ -9,11 +9,6 @@
   src: url(../Fonts/nobel_reg.ttf);
 }
 
-a.navbar-brand {
-  left: 330px;
-  top: 150px;
-}
-
 
 body {
   font-family: 'nobel', sans-serif;
@@ -246,6 +241,12 @@ a.scrollTo {
 }
 
 /*NAVBAR_styling*/
+
+a.navbar-brand {
+  left: 330px;
+  top: 150px;
+}
+
 .navbar {
   z-index: 2000;
   vertical-align: none;
