@@ -1,6 +1,5 @@
 body {
-  position: relative;
-  top:-10px;
+
 }
 
 p {
@@ -46,6 +45,10 @@ p {
   height: 800px;
   width: 100%;
   top: 0;
+}
+
+.brother>p {
+  margin:0;
 }
 
 .uncle {
