@@ -99,6 +99,10 @@ p {
   bottom:;
 }
 
+.ftLogo {
+  width: 420px;
+}
+
 /* CUSTOM CONTACT FORM */
 
 form {
