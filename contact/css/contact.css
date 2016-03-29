@@ -26,3 +26,16 @@
 .one {
   background-image: url("../photos/sky.jpg");
 }
+
+/* CUSTOM CONTACT FORM */
+
+form {
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.form-horizontal .form-group-lg .control-label {
+    padding: 0 0 5px 10px;
+    font-size: 1.5em;
+}
