@@ -7,23 +7,6 @@ p {
   color: black;
 }
 
-.navbar-default {
-  background: rgba(255,255,255,0.8);
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: black;
-    line-height: 60px;
-}
-
-#navbar>ul>li {
-  width: initial;
-  float:right;
-}
-
-#navbar>ul>#home {
-  float: left;
-}
 
 #home img {
   height: 50px;
@@ -114,4 +97,4 @@ form {
 .form-horizontal .form-group-lg .control-label {
     padding: 0 0 5px 10px;
     font-size: 1.5em;
-}
+  }

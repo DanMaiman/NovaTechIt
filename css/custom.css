@@ -262,8 +262,13 @@ a.brand {
   background-color: transparent;
 }
 
-.navbar-default {
+.home {
   background-color: transparent;
+  border-color: white;
+}
+
+.back {
+  background-color: rgba(255, 255, 255, 0.8);
   border-color: white;
 }
 
@@ -271,8 +276,15 @@ a.brand {
   color: #AA3939;
 }
 
-.navbar-default .navbar-nav>li>a {
+.home .navbar-nav>li>a {
   color: white;
+}
+
+.back .navbar-nav>li>a {
+  color: black;
+}
+
+.navbar-default .navbar-nav>li>a {
   line-height: 60px;
 }
 
@@ -416,7 +428,7 @@ video {
 .ftLogo {
   position: relative;
   margin-top: 25px;
-  height: 6em;
+  width: 420px;
 }
 
 hr {
@@ -671,15 +683,15 @@ hr {
       margin-left: 0px;
     }
 
-    ul.nav {
+    .home ul.nav {
       width: 100%;
     }
 
-    #navbar>ul>li {
+    .home #navbar>ul>li {
       width:20%;
     }
 
-    .navbar-right {
+    .home .navbar-right {
       margin-right: 0px;
     }
 }

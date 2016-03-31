@@ -7,23 +7,6 @@ p {
   color: black;
 }
 
-.navbar-default {
-  background: rgba(255,255,255,0.8);
-}
-
-.navbar-default .navbar-nav>li>a {
-    color: black;
-    line-height: 60px;
-}
-
-#navbar>ul>li {
-  width: initial;
-  float:right;
-}
-
-#navbar>ul>#home {
-  float: left;
-}
 
 #home img {
   height: 50px;
@@ -43,17 +26,35 @@ p {
   position: static;
   background-size: cover;
   background-attachment: fixed;
-  height: 800px;
+  height: 1100px;
   width: 100%;
   top: 0;
 }
 
+.brother>h1 {
+  font-size: 5em;
+  position: relative;
+  top:35%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color:white;
+  margin: 0;
+}
+
+.brother img {
+    height: 140px;
+    transform: translateY(10px);
+}
+
 .uncle {
+  top: 600px;
   text-align: left;
   position: absolute;
-  background: linear-gradient(rgba(255,255,255,0.9) 0%, white 40%, white 60%, rgba(255,255,255,0.9)100%);
+  background: linear-gradient(rgba(255,255,255,0.9) 0%, white 50%, white 60%, rgba(255,255,255,0.9)100%);
   background-size: cover;
-  height: 400px;
+  height: 800px;
   width: 100%;
 }
 
@@ -69,7 +70,7 @@ p {
 }
 
 #two {
-  top: 600px;
+  top: 700px;
 }
 
 #foot {
@@ -79,4 +80,8 @@ p {
 
 .ftLinks {
   bottom:;
+}
+
+.ftLogo {
+  width: 420px;
 }
