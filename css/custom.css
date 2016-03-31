@@ -292,6 +292,10 @@ a.brand {
   background: #AA3939;
 }
 
+.navbar-brand>img {
+  height:60px;
+}
+
 /*info tech manage logo*/
 #info1 {
   color: white;
