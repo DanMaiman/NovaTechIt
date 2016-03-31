@@ -12,6 +12,7 @@
 #leverage {
   font-weight: 700;
   font-size: 6em;
+  margin: 60px auto 60px auto;
 }
 
 body {
@@ -247,7 +248,7 @@ a.scrollTo {
 /*NAVBAR_styling*/
 
 a.brand {
-  top: 0px;
+  top: 100px;
 }
 
 .navbar {
