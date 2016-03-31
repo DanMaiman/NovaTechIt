@@ -246,8 +246,8 @@ a.scrollTo {
 
 /*NAVBAR_styling*/
 
-a.navbar-brand {
-  top: 150px;
+a.brand {
+  top: 0px;
 }
 
 .navbar {
@@ -257,7 +257,7 @@ a.navbar-brand {
 
 #logo {
   max-height:500px;
-  margin: -50px auto;
+  margin: 0px auto;
   background-color: transparent;
 }
 
@@ -275,7 +275,7 @@ a.navbar-brand {
   line-height: 60px;
 }
 
-.navbar-brand {
+.brand {
   padding: 0;
   position: absolute;
   left: 50%;
@@ -415,7 +415,6 @@ video {
 .ftLogo {
   position: relative;
   margin-top: 25px;
-  width: 250px;
   height: 6em;
 }
 
@@ -531,7 +530,7 @@ hr {
       margin-right: 0;
     }
 
-    .navbar-brand {
+    .brand {
       padding: 0;
       position: absolute;
       left: 15px;
@@ -660,7 +659,7 @@ hr {
 }
 
 @media (min-width: 768px) {
-    .navbar-brand {
+    .brand {
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
