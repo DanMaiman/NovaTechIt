@@ -122,7 +122,7 @@ a.scrollTo {
 /* End Jmbo - Start Featurettes */
     .dotstyle ul {
       position: absolute;
-      display: inline-block;
+      display: none;
       margin: 0;
       padding: 0;
       list-style: none;
