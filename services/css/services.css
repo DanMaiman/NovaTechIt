@@ -42,7 +42,7 @@ p {
   position: static;
   background-size: cover;
   background-attachment: fixed;
-  height: 800px;
+  height: 900px;
   width: 100%;
   top: 0;
 }
@@ -68,35 +68,38 @@ p {
 }
 
 .one {
-  background-image: url("../photos/office-ppl.jpg");
+  background-image: url("../../photos/office-ppl.jpg");
 }
 
 #two {
-  top: 600px;
+  top: 700px;
 }
 
 .three {
-  background-image: url("../photos/sky.jpg");
+  background-image: url("../../photos/sky.jpg");
 }
 
 #four {
-  top: 1400px;
+  top: 1600px;
+  height: 450px;
 }
 
 .five {
-  background-image: url("../photos/office-ppl.jpg");
+  background-image: url("../../photos/office-ppl.jpg");
 }
 
 #six {
-  top: 2200px;
+  top: 2500px;
 }
 
 .seven {
-  background-image: url("../photos/office-ppl.jpg");
+  background-image: url("../../photos/network.jpg");
+  height: 1100px;
 }
 
 #eight {
-  top:3000px;
+  top:3400px;
+  background: linear-gradient(rgba(255,255,255,0.8) 0%, white 90%);
 }
 
 #foot {
