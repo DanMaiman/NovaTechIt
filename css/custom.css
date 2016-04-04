@@ -410,7 +410,7 @@ video {
     top: 0;
     left: 0;
     z-index: -100;
-    background: url('../photos/sky.jpg') no-repeat;
+    background: url('../photos/milk.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
     overflow: hidden;
