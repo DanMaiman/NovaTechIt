@@ -44,7 +44,7 @@ p {
 }
 
 .brother img {
-    height: 140px;
+    width: 450px;
     transform: translateY(10px);
 }
 
@@ -62,7 +62,6 @@ p {
   width: 100%;
   position: relative;
   top: 50%;
-  font-size: 25px;
 }
 
 .one {
@@ -98,3 +97,11 @@ form {
     padding: 0 0 5px 10px;
     font-size: 1.5em;
   }
+
+
+@media (max-width: 767px)  {
+  
+  .brother img {
+    max-width: 95%;
+  }
+}

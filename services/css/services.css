@@ -6,23 +6,7 @@ p {
   color: black;
 }
 
-.navbar-default {
-  background: rgba(255,255,255,0.8);
-}
 
-.navbar-default .navbar-nav>li>a {
-    color: black;
-    line-height: 60px;
-}
-
-#navbar>ul>li {
-  width: initial;
-  float:right;
-}
-
-#navbar>ul>#home {
-  float: left;
-}
 
 #home img {
   height: 50px;
@@ -64,7 +48,6 @@ p {
   width: 100%;
   position: relative;
   top: 50%;
-  font-size: 25px;
 }
 
 .one {

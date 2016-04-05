@@ -39,11 +39,11 @@ p {
 }
 
 .fadeIn {
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 .fadeout {
-  animation-duration: 2s;
+  animation-duration: 3s;
 }
 
 
@@ -59,6 +59,10 @@ p {
 
 .full-height {
   height: 100vh;
+}
+
+.vert-cont {
+  position: relative;
 }
 
 
@@ -247,10 +251,6 @@ a.scrollTo {
 
 /*NAVBAR_styling*/
 
-a.brand {
-  top: 100px;
-}
-
 .navbar {
   z-index: 2000;
   vertical-align: none;
@@ -301,7 +301,6 @@ a.brand {
   color: white;
   font-size: 4em;
   bottom: -100px;
-  transform: translateX(14px);
 }
 
 /*END_nabar_styling*/
@@ -407,13 +406,14 @@ a.brand {
 
 video {
     position: fixed;
-    top: 0;
+    bottom: 0;
     left: 0;
     z-index: -100;
-    background: url('../photos/sky.jpg') no-repeat;
+    background: url('../photos/deepspace.png') no-repeat;
     background-size: cover;
     transition: 1s opacity;
     overflow: hidden;
+    min-height: 100vh
 }
 /* end of coverr */
 
@@ -469,15 +469,15 @@ hr {
 }
 
 
-@media screen and (min-aspect-ratio: 16/9) and (min-width: 768px) {
+@media screen and (min-aspect-ratio: 16/9) and (min-width: 1024px) {
     video {
       width: 100%;
     }
 }
 
-@media screen and (max-aspect-ratio: 16/9) and (min-width: 768px) {
+@media screen and (max-aspect-ratio: 16/9) {
     video {
-      height: 100%;
+      height: 100vh;
     }
 }
 
@@ -491,6 +491,24 @@ hr {
       height: 100vh;
     }
 }
+
+
+
+
+
+/*     ##  #######  ########  #### ##       ######## 
+###   ### ##     ## ##     ##  ##  ##       ##       
+#### #### ##     ## ##     ##  ##  ##       ##       
+## ### ## ##     ## ########   ##  ##       ######   
+##     ## ##     ## ##     ##  ##  ##       ##       
+##     ## ##     ## ##     ##  ##  ##       ##       
+##     ##  #######  ########  #### ######## ######*/
+
+
+
+
+
+
 
 @media screen and (max-width: 767px) {
     body {
@@ -527,9 +545,12 @@ hr {
 
 /* Navbar */
 
-    #logo {
-      max-height: 50px;
-      margin: 0px auto;
+    .navbar-brand>img {
+      height:30px;
+    }
+
+    .navbar-brand {
+      padding: 10px 0;
     }
 
     .container>.navbar-header {
@@ -540,7 +561,7 @@ hr {
       margin-right: 0;
     }
 
-    .brand {
+    /* .brand {
       padding: 0;
       position: absolute;
       left: 15px;
@@ -548,7 +569,11 @@ hr {
       -ms-transform: none;
       -o-transform: none;
       transform: none;
-    }
+    } Unecessary unless we want to position this in the header of Navbar */
+
+    /* a.brand {
+      top: 100px;
+    }  Unecessay unless want to apply this attribute mobile only */
 
     .navbar-collapse {
       background-color: rgba(255,255,255,0.8);
@@ -561,16 +586,22 @@ hr {
 
 /* End Navbar - Start Jumbo */
 
-    h1.jumbo {
-      font-size: 3em;
+    #logo {
+      max-height: 30px;
+      margin: 0px auto;
+    }
+
+    #leverage {
+      font-size: 3.5em;
       margin: 30px auto 20px auto;
       width: 90%
     }
 
-    h2.jumbo {
+    #info1 {
+      font-size: 2.5em;
       margin-bottom: 50px;
       width: 90%;
-      margin: 20px auto 30px auto;
+      margin: 40px auto 30px auto;
     }
 
     .btn-lg {
@@ -593,7 +624,7 @@ hr {
 
     .jumbo-set {
       position: absolute;
-      background-image: url("../photos/sky.jpg");
+      background-image: url("../photos/deepspace.png");
       background-size: cover;
       height: 100%;
       width: 100%;
@@ -662,6 +693,10 @@ hr {
 
 /* End Feat - Start Footer */
 
+  .ftLogo {
+    max-width: 95%;
+  }
+
   .bulleta {
     padding: 0 5px;
   }
@@ -685,4 +720,35 @@ hr {
     .home .navbar-right {
       margin-right: 0px;
     }
+}
+
+
+
+
+/*######    ###    ########  ##       ######## ######## 
+   ##      ## ##   ##     ## ##       ##          ##    
+   ##     ##   ##  ##     ## ##       ##          ##    
+   ##    ##     ## ########  ##       ######      ##    
+   ##    ######### ##     ## ##       ##          ##    
+   ##    ##     ## ##     ## ##       ##          ##    
+   ##    ##     ## ########  ######## ########    */    
+
+
+@media (max-width: 1199px) {
+
+
+}
+
+@media (max-width: 991px) {
+  .back .navbar-nav>li>a {
+    line-height: 40px;
+  }
+
+  .navbar-brand>img {
+      height:40px;
+  }
+
+
+}
+
 }

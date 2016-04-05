@@ -1,6 +1,7 @@
 jQuery( document ).ready(function($) {
     var images = $("img.ftImage");
-    var video = $("source")    
+    var webm = $("source.webm");
+    var mp4 = $("source.mp4"); 
     var scrollIndex = 0;
     $('#img-1').addClass('fadeIn');
 
@@ -11,10 +12,16 @@ jQuery( document ).ready(function($) {
     });
 
     if ($(window).width() > 767) {
-        $(video).each(function(index) {
-            var dataSrc = $(this).attr("data-vidsrc");
-            var vidSrc = dataSrc;
-            $(this).attr("src", vidSrc);
+        $(webm).each(function(index) {
+            var dataWebmSrc = $(this).attr("data-webmsrc");
+            var webmSrc = dataWebmSrc;
+            $(this).attr("src", webmSrc);
+            console.log(dataWebmSrc);
+        });
+        $(mp4).each(function(index) {
+            var dataMp4Src = $(this).attr("data-mp4src");
+            var mp4Src = dataMp4Src;
+            $(this).attr("src", mp4Src);
         });
     }
 
