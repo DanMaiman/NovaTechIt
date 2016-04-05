@@ -37,7 +37,7 @@ p {
 
 .uncle {
   text-align: left;
-  position: absolute;
+  position: relative;
   background: linear-gradient(rgba(255,255,255,0.9) 0%, white 40%, white 60%, rgba(255,255,255,0.9)100%);
   background-size: cover;
   height: 400px;
@@ -51,7 +51,7 @@ p {
 }
 
 .one {
-  background-image: url("../../photos/office-ppl.jpg");
+  background-image: url("../../photos/fire.jpg");
 }
 
 #two {
@@ -59,7 +59,7 @@ p {
 }
 
 .three {
-  background-image: url("../../photos/sky.jpg");
+  background-image: url("../../photos/simple.jpg");
 }
 
 #four {
@@ -76,7 +76,7 @@ p {
 }
 
 .seven {
-  background-image: url("../../photos/network.jpg");
+  background-image: url("../../photos/globe.jpg");
   height: 1100px;
 }
 
