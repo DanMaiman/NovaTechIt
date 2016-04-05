@@ -51,7 +51,7 @@ p {
 .uncle {
   top: 600px;
   text-align: left;
-  position: absolute;
+  position: relative;
   background: linear-gradient(rgba(255,255,255,0.8) 0%, white 100%);
   background-size: cover;
   height: 400px;
