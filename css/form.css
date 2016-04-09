@@ -1,0 +1,30 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+@font-face {
+  font-family: nobel;
+  src: url(../Fonts/nobel.otf);
+}
+
+@font-face {
+  font-family: nobelReg;
+  src: url(../Fonts/nobel_reg.ttf);
+}
+
+body {
+  font-family: 'nobel', sans-serif;
+  text-align: center;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+p {
+  font-size: 2em;
+  color: black;
+}
