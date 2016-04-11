@@ -36,6 +36,18 @@ p {
   margin:0;
 }
 
+.brother>h1 {
+  font-size: 5em;
+  position: relative;
+  top:35%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color:white;
+  margin: 0;
+}
+
 .uncle {
   text-align: left;
   position: absolute;
