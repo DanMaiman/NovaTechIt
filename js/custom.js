@@ -11,7 +11,7 @@ jQuery( document ).ready(function($) {
         $(this).attr("src", imgSrc);
     });
 
-    if ($(window).width() > 767) {
+    if ($(window).width() < 767) {
         $(webm).each(function(index) {
             var dataWebmSrc = $(this).attr("data-webmsrc");
             var webmSrc = dataWebmSrc;
