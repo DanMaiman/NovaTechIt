@@ -326,7 +326,7 @@ a.scrollTo {
 }
 
 .feat {
-  position: absolute;
+  display: block;
 }
 
 .animated {
@@ -334,31 +334,27 @@ a.scrollTo {
 }
 
 .feat-head-l {
-  text-align: left;
-  top:50px;
-  left:50px;
-  width:70%;
+  text-align: center;
+  top:auto;
+  left:auto;
 }
 
 .feat-head-r {
-  text-align: right;
-  top:50px;
-  right:50px;
-  width:70%;
+  text-align: center;
+  top:auto;
+  right:auto;
 }
 
 .feat-p-l {
-  text-align: left;
-  bottom:50px;
-  left:50px;
-  width:70%;
+  text-align: center;
+  bottom:auto;
+  left:auto;
 }
 
 .feat-p-r {
-  text-align: right;
-  bottom:50px;
-  right:50px;
-  width:70%;
+  text-align: center;
+  bottom:auto;
+  right:auto;
 }
 
 .btWeb {
@@ -366,8 +362,6 @@ a.scrollTo {
 }
 
 .hello {
-  transform: translateY(-50%);
-  top: 50%;
   width: 100%;
   text-align: center;
   color: white;
@@ -405,7 +399,7 @@ a.scrollTo {
 /*COVER VIDEO helloworld*/
 
 video {
-    position: fixed;
+    position: absolute;
     bottom: 0;
     left: 0;
     z-index: -100;

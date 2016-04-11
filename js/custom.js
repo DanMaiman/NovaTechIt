@@ -26,8 +26,8 @@ jQuery( document ).ready(function($) {
     }
 
     $('#fullpage').fullpage({
-        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'lastPage'],
         menu: '#myMenu',
+        autoScrolling: false,
         responsiveWidth: 767,
 
         afterLoad: function(anchorLink, index){
