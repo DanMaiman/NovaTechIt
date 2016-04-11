@@ -38,6 +38,10 @@ p {
   color: white;
 }
 
+.uncle>.container>p {
+  font-size: 3em;
+}
+
 .fadeIn {
   animation-duration: 3s;
 }

@@ -25,6 +25,10 @@ jQuery( document ).ready(function($) {
         });
     }
 
+    $(".scrollTo").click(function(){
+        $.fn.fullpage.moveSectionDown();
+    });
+
     $('#fullpage').fullpage({
         menu: '#myMenu',
         autoScrolling: false,
