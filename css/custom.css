@@ -38,6 +38,18 @@ p {
   color: white;
 }
 
+.nav-up {
+    top: -90px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+
+}
+
+.nav-down {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
 .uncle>.container>p {
   font-size: 3em;
 }

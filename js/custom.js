@@ -1,8 +1,13 @@
 jQuery( document ).ready(function($) {
     var images = $("img.ftImage");
     var webm = $("source.webm");
-    var mp4 = $("source.mp4"); 
+    var mp4 = $("source.mp4");
     var scrollIndex = 0;
+    // Hide Header on on scroll down
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('.back.navbar').outerHeight();
     $('#img-1').addClass('fadeIn');
 
     $(images).each(function(index) {
@@ -29,18 +34,40 @@ jQuery( document ).ready(function($) {
         $.fn.fullpage.moveSectionDown();
     });
 
-    var lastScrollTop = 0;
+//Fading Navbar
+    $(window).scroll(function(event){
+        didScroll = true;
+    });
 
-   // $(window).scroll(function () {
-      
-  //  var st = $(this).scrollTop();
-    //        if (st < lastScrollTop){
-      //          $('.back.navbar').animate({top:'0'});
-   //         } else {
-     //         $('.back.navbar').animate({top:'-90px'});
-       //     }
-         //   lastScrollTop = st;
-  //    })
+    setInterval(function() {
+        if (didScroll) {
+            hasScrolled();
+            didScroll = false;
+        }
+    }, 250);
+
+    function hasScrolled() {
+        var st = $(this).scrollTop();
+
+        // Make sure they scroll more than delta
+        if(Math.abs(lastScrollTop - st) <= delta)
+            return;
+
+        // If they scrolled down and are past the navbar, add class .nav-up.
+        // This is necessary so you never see what is "behind" the navbar.
+        if (st > lastScrollTop && st > navbarHeight){
+            // Scroll Down
+            $('.back.navbar').removeClass('nav-down').addClass('nav-up');
+        } else {
+            // Scroll Up
+            if(st + $(window).height() < $(document).height()) {
+                $('.back.navbar').removeClass('nav-up').addClass('nav-down');
+            }
+        }
+
+        lastScrollTop = st;
+    }
+//end of FadeNavBar
 
     $('#fullpage').fullpage({
         menu: '#myMenu',
@@ -64,11 +91,11 @@ jQuery( document ).ready(function($) {
                     $('img[data-img="5" ]').removeClass('fadeOut').addClass('fadeIn');
                     $('img[data-img!="5" ]').removeClass('fadeIn').addClass('fadeOut');
                 }
-            
+
             } /*else {
                 if ($('.feat[data-index="' + index + '" ]').hasClass('fadeOutUp')) {
                     $('.feat[data-index="' + index + '" ]').addClass('animated fadeInDown').removeClass('init fadeOutUp');
-                    $('.feat[data-index="' + indexPlus + '" ]').removeClass('fadeInUp').addClass('fadeOutDown');                
+                    $('.feat[data-index="' + indexPlus + '" ]').removeClass('fadeInUp').addClass('fadeOutDown');
                 } else {
                 $('.feat[data-index="' + index + '" ]').addClass('animated fadeInUp').removeClass('init fadeOutUp fadeOutDown');
                 $('.feat[data-index="' + indexMinus + '" ]').removeClass('fadeInUp').addClass('fadeOutUp');
@@ -81,7 +108,7 @@ jQuery( document ).ready(function($) {
     // End FullPage Function
 
     var windowHeight = $(window).height();
-    
+
 
     if ($(window).width() < 768) {
         var twoOffset = $("#two").offset().top;
@@ -116,9 +143,9 @@ jQuery( document ).ready(function($) {
         });
     }
 
-    $(window).scroll(function () { 
+    $(window).scroll(function () {
         var scrollPos = $(window).scrollTop();
-        var twoOffset = $("#two").offset().top;   
+        var twoOffset = $("#two").offset().top;
         var filterFade = 1 - (scrollPos/twoOffset)*(scrollPos/twoOffset);
         $(".filter-load").css("opacity", filterFade);
         if (filterFade > 0.9) {
@@ -127,4 +154,3 @@ jQuery( document ).ready(function($) {
     });
 
 });
-
