@@ -29,10 +29,24 @@ jQuery( document ).ready(function($) {
         $.fn.fullpage.moveSectionDown();
     });
 
+    var lastScrollTop = 0;
+
+   // $(window).scroll(function () {
+      
+  //  var st = $(this).scrollTop();
+    //        if (st < lastScrollTop){
+      //          $('.back.navbar').animate({top:'0'});
+   //         } else {
+     //         $('.back.navbar').animate({top:'-90px'});
+       //     }
+         //   lastScrollTop = st;
+  //    })
+
     $('#fullpage').fullpage({
         menu: '#myMenu',
         autoScrolling: false,
         responsiveWidth: 767,
+        fitToSection: false,
 
         afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
@@ -41,7 +55,6 @@ jQuery( document ).ready(function($) {
 
             if ($(window).width() > 767) {
                 //using index
-                console.log(index);
                 if (index > 1 && index < 6) {
                     $('img[data-img="' + index + '" ]').removeClass('fadeOut').addClass('fadeIn');
                     $('img[data-img!="' + index + '" ]').removeClass('fadeIn').addClass('fadeOut');
@@ -67,17 +80,17 @@ jQuery( document ).ready(function($) {
     });
     // End FullPage Function
 
+    var windowHeight = $(window).height();
+    
+
     if ($(window).width() < 768) {
-        var windowHeight = $(window).height();
         var twoOffset = $("#two").offset().top;
         var threeOffset = $("#three").offset().top;
         var fourOffset = $("#four").offset().top;
 
         $(window).scroll(function()  {
             var scrollPos = $(window).scrollTop();
-            var windowHeight = $(window).height();
             var scrollBot = scrollPos - 0.4*windowHeight;
-            console.log(scrollBot);
 
                 if (scrollBot <= twoOffset && $('#img-2').hasClass('fadeIn')) {
                     $('#img-2').removeClass('fadeIn').addClass('fadeOut');
@@ -103,7 +116,15 @@ jQuery( document ).ready(function($) {
         });
     }
 
-    $('.filter-load').addClass('hidden');
+    $(window).scroll(function () { 
+        var scrollPos = $(window).scrollTop();
+        var twoOffset = $("#two").offset().top;   
+        var filterFade = 1 - (scrollPos/twoOffset)*(scrollPos/twoOffset);
+        $(".filter-load").css("opacity", filterFade);
+        if (filterFade > 0.9) {
+            $(".filter-load").css("opacity", 0.9);
+        }
+    });
 
 });
 
