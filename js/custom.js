@@ -148,8 +148,11 @@ jQuery( document ).ready(function($) {
         var twoOffset = $("#two").offset().top;
         var filterFade = 1 - (scrollPos/twoOffset)*(scrollPos/twoOffset);
         $(".filter-load").css("opacity", filterFade);
-        if (filterFade > 0.9) {
-            $(".filter-load").css("opacity", 0.9);
+        if (filterFade > 0.8) {
+            $(".filter-load").css("opacity", 0.8);
+        }
+        if (filterFade < 0.3) {
+            $(".filter-load").css("opacity", 0.3);
         }
     });
 
