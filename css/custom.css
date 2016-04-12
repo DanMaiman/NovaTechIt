@@ -273,6 +273,7 @@ a.scrollTo {
 }
 
 #logo {
+  height: 150px;
   max-height:500px;
   margin: 0px auto;
   background-color: transparent;
@@ -599,7 +600,7 @@ hr {
 /* End Navbar - Start Jumbo */
 
     #logo {
-      max-height: 60px;
+      max-height: 90px;
       margin: 0px auto;
     }
 
