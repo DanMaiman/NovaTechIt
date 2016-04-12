@@ -391,6 +391,7 @@ a.scrollTo {
 
 #img-4 {
   opacity: 0;
+  bottom: 0;
 }
 
 .filter {
@@ -613,7 +614,6 @@ hr {
     }
 
     .hello {
-      transform: translateY(0%);
       top: 50%;
       width: 100%;
       text-align: center;
