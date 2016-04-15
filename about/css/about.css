@@ -1,6 +1,5 @@
 body {
   position: relative;
-  top:-10px;
 }
 
 p {
@@ -41,11 +40,6 @@ p {
   transform: translateY(-50%);
   color:white;
   margin: 0;
-}
-
-.brother img {
-    height: 140px;
-    transform: translateY(10px);
 }
 
 .uncle {

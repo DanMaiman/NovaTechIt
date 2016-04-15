@@ -38,6 +38,10 @@ p {
   color: white;
 }
 
+.clear {
+  margin: 0;
+}
+
 .uncle>.container>p {
   font-size: 3em;
 }
@@ -414,6 +418,11 @@ a.scrollTo {
   color: white;
 }
 
+.bkImages {
+  position: fixed;
+  left: 0;
+}
+
 .images img {
   width: 100%;
   position: fixed;
@@ -578,6 +587,14 @@ hr {
 
     .images img {
       width: 250%;
+      -webkit-transform: translateX(-30%);
+      -ms-transform: translateX(-30%);
+      -o-transform: translateX(-30%);
+      transform: translateX(-30%);
+    }
+
+    .bkImages {
+      width: 350%;
       -webkit-transform: translateX(-30%);
       -ms-transform: translateX(-30%);
       -o-transform: translateX(-30%);

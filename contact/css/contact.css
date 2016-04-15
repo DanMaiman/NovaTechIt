@@ -1,6 +1,5 @@
 body {
   position: relative;
-  top:-10px;
 }
 
 p {
@@ -43,7 +42,7 @@ p {
   margin: 0;
 }
 
-.brother img {
+.contLogo {
     width: 450px;
     transform: translateY(10px);
 }
