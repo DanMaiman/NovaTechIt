@@ -841,7 +841,10 @@ hr {
     hr {
       width: 250px;
     }
-    
+
+    .uncle>.container>p {
+      font-size: 2em;
+    }
   .back .navbar-nav>li>a {
     line-height: 40px;
   }
