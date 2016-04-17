@@ -586,7 +586,7 @@ hr {
     }
 
     .images img {
-      width: 250%;
+      width: 300%;
       -webkit-transform: translateX(-30%);
       -ms-transform: translateX(-30%);
       -o-transform: translateX(-30%);
@@ -829,6 +829,19 @@ hr {
 }
 
 @media (max-width: 991px) {
+
+    body {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: 2em;
+    }
+
+    hr {
+      width: 250px;
+    }
+    
   .back .navbar-nav>li>a {
     line-height: 40px;
   }
