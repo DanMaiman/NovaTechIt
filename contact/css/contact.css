@@ -105,9 +105,18 @@ form {
 }
 
 
-@media (max-width: 767px)  {
-  
+
+@media (max-width: 767px) {
   .brother img {
     max-width: 95%;
   }
+  .brother>h1 {top:25%;}
+  .uncle {top:1000px;}
+  .brother {height: 1000px;background-position: -150%, 0%}
+}
+
+@media (max-width: 450px)  {
+ 
+  .brother {background-position: -70%, 0%} 
+
 }

@@ -26,7 +26,7 @@ p {
   position: static;
   background-size: cover;
   background-attachment: fixed;
-  height: 900px;
+  height: 800px;
   width: 100%;
   top: 0;
 }
@@ -70,7 +70,7 @@ p {
 }
 
 #two {
-  top: 900px;
+  top: 800px;
 }
 
 .three {
@@ -78,7 +78,7 @@ p {
 }
 
 #four {
-  top: 1800px;
+  top: 1600px;
 }
 
 .five {
@@ -86,7 +86,7 @@ p {
 }
 
 #six {
-  top: 2700px;
+  top: 2400px;
 }
 
 .seven {
@@ -95,7 +95,7 @@ p {
 }
 
 #eight {
-  top:3800px;
+  top:3500px;
   background: linear-gradient(rgba(255,255,255,0.8) 0%, white 90%);
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
@@ -110,4 +110,15 @@ p {
 
 .ftLinks {
   bottom:;
+}
+
+@media screen and (max-width: 767px) {
+  .one {height: 600px;}
+  .five {background-position: -95% 0%;}
+  .seven {height:900px;background-position: -90% 0%;}
+
+  #two {top: 600px;}
+  #four {top:1400px;}
+  #six {top:2200px;}
+  #eight {top:3100px;}
 }
