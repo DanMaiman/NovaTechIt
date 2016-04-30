@@ -383,7 +383,7 @@ a.scrollTo {
 }
 
 .feat {
-  display: block;
+  position: absolute;
 }
 
 .animated {
@@ -391,27 +391,31 @@ a.scrollTo {
 }
 
 .feat-head-l {
-  text-align: center;
-  top:auto;
-  left:auto;
+  text-align: left;
+  top:50px;
+  left:50px;
+  width:70%;
 }
 
 .feat-head-r {
-  text-align: center;
-  top:auto;
-  right:auto;
+  text-align: right;
+  top:50px;
+  right:50px;
+  width:70%;
 }
 
 .feat-p-l {
-  text-align: center;
-  bottom:auto;
-  left:auto;
+  text-align: left;
+  bottom:50px;
+  left:50px;
+  width:70%;
 }
 
 .feat-p-r {
-  text-align: center;
-  bottom:auto;
-  right:auto;
+  text-align: right;
+  bottom:50px;
+  right:50px;
+  width:70%;
 }
 
 .btWeb {
