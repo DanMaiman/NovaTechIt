@@ -301,9 +301,9 @@ a.scrollTo {
 }
 
 #logo {
-  height: 150px;
-  max-height:500px;
-  margin: 0px auto;
+  height: 300px;
+  max-height: 500px;
+  margin: 0px auto 75px auto;
   background-color: transparent;
 }
 
@@ -431,6 +431,9 @@ a.scrollTo {
 .bkImages {
   position: fixed;
   left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
 }
 
 .images img {
@@ -562,6 +565,11 @@ hr {
       width: inherit;
       height: 100vh;
     }
+
+    .bkImages {
+      width: inherit;
+      height: 100vh;
+    }
 }
 
 /*######    ###    ########  ##       ######## ########
@@ -644,11 +652,11 @@ hr {
     }
 
     .bkImages {
-      width: 350%;
-      -webkit-transform: translateX(-30%);
-      -ms-transform: translateX(-30%);
-      -o-transform: translateX(-30%);
-      transform: translateX(-30%);
+      width: 300%;
+      -webkit-transform: translateX(-55%);
+      -ms-transform: translateX(-55%);
+      -o-transform: translateX(-55%);
+      transform: translateX(-55%);
     }
 
     .dotstyle {

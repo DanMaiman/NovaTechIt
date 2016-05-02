@@ -26,7 +26,6 @@ p {
   background-size: cover;
   background-attachment: fixed;
   height: 1100px;
-  width: 100%;
   top: 0;
 }
 
@@ -67,7 +66,7 @@ p {
 }
 
 .one {
-  background-image: url("../../photos/field.jpg");
+  /* background-image: url("../../photos/field.jpg"); */
 }
 
 #two {
@@ -107,16 +106,26 @@ form {
 
 
 @media (max-width: 767px) {
-  .brother img {
-    max-width: 95%;
-  }
+  .contLogo {max-width: 95%;}
   .brother>h1 {top:25%;}
   .uncle {top:1000px;}
-  .brother {height: 1000px;background-position: -150%, 0%}
+  .brother {height: 1000px;}
+  .bkImages {
+      width: 150%;
+      -webkit-transform: translate(-30%,-20%);
+      -ms-transform: translate(-30%,-20%);
+      -o-transform: translate(-30%,-20%);
+      transform: translate(-30%,-20%);
+    }
 }
 
 @media (max-width: 450px)  {
- 
-  .brother {background-position: -70%, 0%} 
+     .bkImages {
+      width: 300%;
+      -webkit-transform: translateX(-55%);
+      -ms-transform: translateX(-55%);
+      -o-transform: translateX(-55%);
+      transform: translateX(-55%);
+    }
 
 }
