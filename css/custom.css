@@ -9,11 +9,6 @@
   src: url(../Fonts/nobel_reg.ttf);
 }
 
-#leverage {
-  font-weight: 700;
-  font-size: 6em;
-  margin: 60px auto 60px auto;
-}
 
 body {
   font-family: 'nobel', sans-serif;
@@ -60,7 +55,7 @@ p {
   position: fixed;
   width:100%;
   height:100vh;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.3);
   z-index: 1000;
 }
 
@@ -68,6 +63,15 @@ p {
 .full-height {
   height: 100vh;
 }
+
+
+      /* ##     ## ##     ## ########   #######  
+      ## ##     ## ###   ### ##     ## ##     ## 
+      ## ##     ## #### #### ##     ## ##     ## 
+      ## ##     ## ## ### ## ########  ##     ## 
+##    ## ##     ## ##     ## ##     ## ##     ## 
+##    ## ##     ## ##     ## ##     ## ##     ## 
+ ######   #######  ##     ## ########   #####*/  
 
 .vert-cont {
   position: relative;
@@ -86,6 +90,27 @@ h2.jumbo {
   margin-bottom: 50px;
   width: 100%;
   margin: 20px auto 50px auto;
+}
+
+#leverage {
+  font-weight: 700;
+  font-size: 6em;
+  margin: 60px auto 60px auto;
+}
+
+.btWeb {
+  overflow: hidden;
+}
+
+.hello {
+  width: 100%;
+  text-align: center;
+  color: white;
+  box-shadow: -20px 0 60px 25px black;
+}
+
+.hello>.fp-tableCell {
+  box-shadow: inset 0px 0px 20px 3px black;
 }
 
 .btn-lg {
@@ -415,16 +440,6 @@ a.scrollTo {
   bottom:50px;
   right:50px;
   width:70%;
-}
-
-.btWeb {
-  overflow: hidden;
-}
-
-.hello {
-  width: 100%;
-  text-align: center;
-  color: white;
 }
 
 .bkImages {

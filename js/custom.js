@@ -70,6 +70,8 @@ jQuery( document ).ready(function($) {
 //end of FadeNavBar
 
     $('#fullpage').fullpage({
+        anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
+        lockAnchors: true,
         menu: '#myMenu',
         autoScrolling: false,
         responsiveWidth: 767,
@@ -143,7 +145,7 @@ jQuery( document ).ready(function($) {
         });
     }
 
-    $(window).scroll(function () {
+    /*$(window).scroll(function () {
         var scrollPos = $(window).scrollTop();
         var twoOffset = $("#two").offset().top;
         var filterFade = 1 - (scrollPos/twoOffset)*(scrollPos/twoOffset);
@@ -154,6 +156,6 @@ jQuery( document ).ready(function($) {
         if (filterFade < 0.3) {
             $(".filter-load").css("opacity", 0.3);
         }
-    });
+    });*/
 
 });
