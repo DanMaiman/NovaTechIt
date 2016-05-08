@@ -59,6 +59,10 @@ p {
   transform: translateY(-100%);
 }
 
+.formFeed {
+  margin-top: 50px;
+}
+
 .bullet {
   width: 100%;
   position: relative;
