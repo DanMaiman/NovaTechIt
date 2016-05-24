@@ -29,7 +29,7 @@ h2 {
 }
 
 p {
-  font-size: 4em;
+  font-size: 3.8em;
   color: white;
 }
 
@@ -405,7 +405,6 @@ a.scrollTo {
 }
 
 .featLink:hover, .featlink:focus, .featLink:active, .featLink:active:hover, .featLink:active:focus {
-  color: ;
   text-decoration: none;
   color: #AA3939;
 }
