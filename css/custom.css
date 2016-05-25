@@ -157,6 +157,7 @@ a.scrollTo {
     font-size: 8em;
     color: white;
     transform: translateX(-50%);
+    display: none; !important
 }
 
 
@@ -800,6 +801,8 @@ hr {
 
     a.scrollTo {
       bottom: -15px;
+      display: inline; !important 
+
     }
     video {
       display: none;
