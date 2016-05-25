@@ -1,124 +1,114 @@
-body {
-
-}
-
+body {}
 p {
-  color: black;
+    color: black;
 }
-
-
-
 #home img {
-  height: 50px;
+    height: 50px;
 }
-
 .uncle .container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
-
 .uncle ul {
-  font-size: 2em;
-  padding-top: 30px;
+    font-size: 2em;
+    padding-top: 30px;
 }
-
 .brother {
-  position: static;
-  background-size: cover;
-  background-attachment: fixed;
-  height: 800px;
-  width: 100%;
-  top: 0;
+    position: static;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+    width: 100%;
+    top: 0;
 }
-
 .brother>p {
-  margin:0;
+    margin: 0;
 }
-
 .brother>h1 {
-  font-size: 5em;
-  position: relative;
-  top:35%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  color:white;
-  margin: 0;
+    font-size: 5em;
+    position: relative;
+    top: 35%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: white;
+    margin: 0;
 }
-
 .uncle {
-  text-align: left;
-  position: absolute;
-  background: linear-gradient(rgba(255,255,255,0.9) 0%, white 40%, white 60%, rgba(255,255,255,0.9)100%);
-  background-size: cover;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 100%;
+    text-align: left;
+    position: absolute;
+    background: linear-gradient(rgba(255, 255, 255, 0.9) 0%, white 40%, white 60%, rgba(255, 255, 255, 0.9)100%);
+    background-size: cover;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
 }
-
 .bullet {
-  width: 100%;
-  position: relative;
-  top: 50%;
+    width: 100%;
+    position: relative;
+    top: 50%;
 }
-
 .one {
-  background-image: url("../../photos/biz.jpg");
+    background-image: url("../../photos/biz.jpg");
 }
-
 #two {
-  top: 800px;
+    top: 800px;
 }
-
 .three {
-  background-image: url("../../photos/simple.jpg");
+    background-image: url("../../photos/simple.jpg");
 }
-
 #four {
-  top: 1600px;
+    top: 1600px;
 }
-
 .five {
-  background-image: url("../../photos/office-ppl.jpg");
+    background-image: url("../../photos/office-ppl.jpg");
 }
-
 #six {
-  top: 2400px;
+    top: 2400px;
 }
-
 .seven {
-  background-image: url("../../photos/shadow.jpg");
-  height: 1100px;
+    background-image: url("../../photos/shadow.jpg");
+    height: 1100px;
 }
-
 #eight {
-  top:3500px;
-  background: linear-gradient(rgba(255,255,255,0.8) 0%, white 90%);
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  -o-transform: translateY(-100%);
-  transform: translateY(-100%);
+    top: 3500px;
+    background: linear-gradient(rgba(255, 255, 255, 0.8) 0%, white 90%);
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
 }
-
 #foot {
-  position: relative;
-  z-index: 100;
+    position: relative;
+    z-index: 100;
 }
-
 .ftLinks {
-  bottom:;
+    bottom: ;
 }
-
 @media screen and (max-width: 767px) {
-  .one {height: 600px;}
-  .five {background-position: -95% 0%;}
-  .seven {height:900px;background-position: -90% 0%;}
-
-  #two {top: 600px;}
-  #four {top:1400px;}
-  #six {top:2200px;}
-  #eight {top:3100px;}
+    .one {
+        height: 600px;
+    }
+    .five {
+        background-position: -95% 0%;
+    }
+    .seven {
+        height: 900px;
+        background-position: -90% 0%;
+    }
+    #two {
+        top: 600px;
+    }
+    #four {
+        top: 1400px;
+    }
+    #six {
+        top: 2200px;
+    }
+    #eight {
+        top: 3100px;
+    }
 }

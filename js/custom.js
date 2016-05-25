@@ -1,4 +1,4 @@
-jQuery( document ).ready(function($) {
+jQuery(document).ready(function($) {
     var images = $("img.ftImage");
     var webm = $("source.webm");
     var mp4 = $("source.mp4");
@@ -30,12 +30,12 @@ jQuery( document ).ready(function($) {
         });
     }
 
-    $(".scrollTo").click(function(){
+    $(".scrollTo").click(function() {
         $.fn.fullpage.moveSectionDown();
     });
 
-//Fading Navbar
-    $(window).scroll(function(event){
+    //Fading Navbar
+    $(window).scroll(function(event) {
         didScroll = true;
     });
 
@@ -50,24 +50,24 @@ jQuery( document ).ready(function($) {
         var st = $(this).scrollTop();
 
         // Make sure they scroll more than delta
-        if(Math.abs(lastScrollTop - st) <= delta)
+        if (Math.abs(lastScrollTop - st) <= delta)
             return;
 
         // If they scrolled down and are past the navbar, add class .nav-up.
         // This is necessary so you never see what is "behind" the navbar.
-        if (st > lastScrollTop && st > navbarHeight){
+        if (st > lastScrollTop && st > navbarHeight) {
             // Scroll Down
             $('.back.navbar').removeClass('nav-down').addClass('nav-up');
         } else {
             // Scroll Up
-            if(st + $(window).height() < $(document).height()) {
+            if (st + $(window).height() < $(document).height()) {
                 $('.back.navbar').removeClass('nav-up').addClass('nav-down');
             }
         }
 
         lastScrollTop = st;
     }
-//end of FadeNavBar
+    //end of FadeNavBar
 
     $('#fullpage').fullpage({
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
@@ -77,7 +77,7 @@ jQuery( document ).ready(function($) {
         responsiveWidth: 767,
         fitToSection: false,
 
-        afterLoad: function(anchorLink, index){
+        afterLoad: function(anchorLink, index) {
             var loadedSection = $(this);
             var indexPlus = index + 1;
             var indexMinus = index - 1;
@@ -94,16 +94,17 @@ jQuery( document ).ready(function($) {
                     $('img[data-img!="5" ]').removeClass('fadeIn').addClass('fadeOut');
                 }
 
-            } /*else {
-                if ($('.feat[data-index="' + index + '" ]').hasClass('fadeOutUp')) {
-                    $('.feat[data-index="' + index + '" ]').addClass('animated fadeInDown').removeClass('init fadeOutUp');
-                    $('.feat[data-index="' + indexPlus + '" ]').removeClass('fadeInUp').addClass('fadeOutDown');
-                } else {
-                $('.feat[data-index="' + index + '" ]').addClass('animated fadeInUp').removeClass('init fadeOutUp fadeOutDown');
-                $('.feat[data-index="' + indexMinus + '" ]').removeClass('fadeInUp').addClass('fadeOutUp');
-                $('.feat[data-index="' + indexPlus + '" ]').removeClass('fadeInUp').addClass('fadeOutDown');
-                }
-            }*/
+            }
+            /*else {
+                           if ($('.feat[data-index="' + index + '" ]').hasClass('fadeOutUp')) {
+                               $('.feat[data-index="' + index + '" ]').addClass('animated fadeInDown').removeClass('init fadeOutUp');
+                               $('.feat[data-index="' + indexPlus + '" ]').removeClass('fadeInUp').addClass('fadeOutDown');
+                           } else {
+                           $('.feat[data-index="' + index + '" ]').addClass('animated fadeInUp').removeClass('init fadeOutUp fadeOutDown');
+                           $('.feat[data-index="' + indexMinus + '" ]').removeClass('fadeInUp').addClass('fadeOutUp');
+                           $('.feat[data-index="' + indexPlus + '" ]').removeClass('fadeInUp').addClass('fadeOutDown');
+                           }
+                       }*/
         }
 
     });
@@ -117,31 +118,31 @@ jQuery( document ).ready(function($) {
         var threeOffset = $("#three").offset().top;
         var fourOffset = $("#four").offset().top;
 
-        $(window).scroll(function()  {
+        $(window).scroll(function() {
             var scrollPos = $(window).scrollTop();
-            var scrollBot = scrollPos - 0.4*windowHeight;
+            var scrollBot = scrollPos - 0.4 * windowHeight;
 
-                if (scrollBot <= twoOffset && $('#img-2').hasClass('fadeIn')) {
-                    $('#img-2').removeClass('fadeIn').addClass('fadeOut');
-                }
+            if (scrollBot <= twoOffset && $('#img-2').hasClass('fadeIn')) {
+                $('#img-2').removeClass('fadeIn').addClass('fadeOut');
+            }
 
-                if (scrollBot > twoOffset) {
-                    $('#img-2').addClass('fadeIn').removeClass('fadeOut');
-                    if($('#img-3').hasClass('fadeIn')) {
-                        $('#img-3').removeClass('fadeIn').addClass('fadeOut');
-                    }
+            if (scrollBot > twoOffset) {
+                $('#img-2').addClass('fadeIn').removeClass('fadeOut');
+                if ($('#img-3').hasClass('fadeIn')) {
+                    $('#img-3').removeClass('fadeIn').addClass('fadeOut');
                 }
+            }
 
-                if (scrollBot > threeOffset) {
-                    $('#img-3').addClass('fadeIn').removeClass('fadeOut');
-                    if($('#img-4').hasClass('fadeIn')) {
-                        $('#img-4').removeClass('fadeIn').addClass('fadeOut');
-                    }
+            if (scrollBot > threeOffset) {
+                $('#img-3').addClass('fadeIn').removeClass('fadeOut');
+                if ($('#img-4').hasClass('fadeIn')) {
+                    $('#img-4').removeClass('fadeIn').addClass('fadeOut');
                 }
+            }
 
-                if (scrollBot > fourOffset) {
-                    $('#img-4').addClass('fadeIn').removeClass('fadeOut');
-                }
+            if (scrollBot > fourOffset) {
+                $('#img-4').addClass('fadeIn').removeClass('fadeOut');
+            }
         });
     }
 
