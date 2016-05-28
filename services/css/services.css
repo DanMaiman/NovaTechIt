@@ -1,9 +1,5 @@
-body {}
 p {
     color: black;
-}
-#home img {
-    height: 50px;
 }
 .uncle .container {
     padding-top: 40px;
@@ -28,6 +24,7 @@ p {
     font-size: 5em;
     position: relative;
     top: 35%;
+    -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -40,6 +37,7 @@ p {
     position: absolute;
     background: linear-gradient(rgba(255, 255, 255, 0.9) 0%, white 40%, white 60%, rgba(255, 255, 255, 0.9)100%);
     background-size: cover;
+    -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
@@ -76,6 +74,7 @@ p {
 #eight {
     top: 3500px;
     background: linear-gradient(rgba(255, 255, 255, 0.8) 0%, white 90%);
+    -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-100%);
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
@@ -85,19 +84,16 @@ p {
     position: relative;
     z-index: 100;
 }
-.ftLinks {
-    bottom: ;
-}
 @media screen and (max-width: 767px) {
     .one {
         height: 600px;
     }
     .five {
-        background-position: -95% 0%;
+        background-position: -95%;
     }
     .seven {
         height: 900px;
-        background-position: -90% 0%;
+        background-position: -90%;
     }
     #two {
         top: 600px;

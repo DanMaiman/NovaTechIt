@@ -4,6 +4,7 @@ body {
 
 p {
   color: black;
+  text-align: center;
 }
 
 
@@ -11,9 +12,6 @@ p {
   height: 50px;
 }
 
-.uncle .container {
-  padding-top: 0px;
-}
 
 .uncle ul {
   font-size: 2em;
@@ -37,6 +35,7 @@ p {
   font-size: 5em;
   position: relative;
   top:35%;
+  -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
@@ -57,6 +56,7 @@ p {
   background: linear-gradient(rgba(255,255,255,0.8) 0%, white 100%);
   background-size: cover;
   width: 100%;
+  -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-100%);
   -ms-transform: translateY(-100%);
   -o-transform: translateY(-100%);
@@ -77,26 +77,16 @@ p {
   top: 50%;
 }
 
-.one {
-  /* background-image: url("../../photos/table.jpeg"); */
-}
-
-#two {
-
-}
 
 #foot {
   position: relative;
   z-index: 100;
 }
 
-.ftLinks {
-  bottom:;
-}
-
 .ftLogo {
   width: 420px;
 }
+
 
 /* CUSTOM CONTACT FORM */
 
@@ -121,6 +111,7 @@ form {
   .brother {height: 1000px;}
   .bkImages {
       width: 150%;
+      -moz-transform: translate(-30%,-20%);
       -webkit-transform: translate(-30%,-20%);
       -ms-transform: translate(-30%,-20%);
       -o-transform: translate(-30%,-20%);
@@ -131,6 +122,7 @@ form {
 @media (max-width: 450px)  {
      .bkImages {
       width: 300%;
+      -moz-transform: translate(-55%);
       -webkit-transform: translateX(-55%);
       -ms-transform: translateX(-55%);
       -o-transform: translateX(-55%);
