@@ -36,10 +36,10 @@ p {
     font-size: 3em;
 }
 .fadeIn {
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 .fadeout {
-    animation-duration: 3s;
+    animation-duration: 1s;
 }
 .filter-load {
     position: fixed;
@@ -87,6 +87,7 @@ h2.jumbo {
     width: 100%;
     text-align: center;
     color: white;
+    min-height: 100vh;
     box-shadow: -20px 0 60px 30px black;
 }
 .hello>.fp-tableCell {
@@ -343,6 +344,11 @@ a.scrollTo {
 #fullpage {
     z-index: 1500;
 }
+
+.fture {
+    min-height: 100vh;
+}
+
 .fture h1 {
     margin: 0px 0px 20px 0px;
     font-size: 6em;
