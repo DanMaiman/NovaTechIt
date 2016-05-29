@@ -349,6 +349,10 @@ a.scrollTo {
     min-height: 100vh;
 }
 
+.fp-tableCell>.container {
+    margin: 0;
+}
+
 .fture h1 {
     margin: 0px 0px 20px 0px;
     font-size: 6em;
