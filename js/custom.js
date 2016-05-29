@@ -85,14 +85,14 @@ jQuery(document).ready(function($) {
 
            // if ($(window).width() > 767) {
                 //using index
-                if (index > 1 && index < 6) {
+                if (index > 1 && index < 7) {
                     $('img[data-img="' + index + '" ]').removeClass('fadeOut').addClass('fadeIn');
                     $('img[data-img!="' + index + '" ]').removeClass('fadeIn').addClass('fadeOut');
                 }
 
-                if (index == 6) {
-                    $('img[data-img="5" ]').removeClass('fadeOut').addClass('fadeIn');
-                    $('img[data-img!="5" ]').removeClass('fadeIn').addClass('fadeOut');
+                if (index == 7) {
+                    $('img[data-img="6" ]').removeClass('fadeOut').addClass('fadeIn');
+                    $('img[data-img!="6" ]').removeClass('fadeIn').addClass('fadeOut');
                 }
 
           //  }
