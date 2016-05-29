@@ -81,6 +81,7 @@ jQuery(document).ready(function($) {
             var loadedSection = $(this);
             var indexPlus = index + 1;
             var indexMinus = index - 1;
+            console.log (index);
 
             if ($(window).width() > 767) {
                 //using index
