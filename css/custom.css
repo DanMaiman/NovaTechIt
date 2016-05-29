@@ -357,7 +357,7 @@ a.scrollTo {
     color: #AA3939;
 }
 .feat {
-    position: absolute;
+    /*position: absolute;*/
 }
 .animated {
     display: block;
@@ -366,25 +366,25 @@ a.scrollTo {
     text-align: left;
     top: 50px;
     left: 50px;
-    width: 70%;
+    /*width: 70%;*/
 }
 .feat-head-r {
-    text-align: right;
+    text-align: left;
     top: 50px;
-    right: 50px;
-    width: 70%;
+    left: 50px;
+    /*width: 70%;*/
 }
 .feat-p-l {
     text-align: left;
     bottom: 50px;
     left: 50px;
-    width: 70%;
+    /*width: 70%;*/
 }
 .feat-p-r {
-    text-align: right;
+    text-align: left;
     bottom: 50px;
-    right: 50px;
-    width: 70%;
+    left: 50px;
+    /*width: 70%;*/
 }
 .bkImages {
     position: fixed;
