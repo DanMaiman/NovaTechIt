@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
 
     $(images).each(function(index) {
         var dataSrc = $(this).attr("data-src");
-        var imgSrc = "photos/" + dataSrc + "_c.jpg";
+        var imgSrc = "photos/" + dataSrc + ".jpg";
         $(this).attr("src", imgSrc);
     });
     
