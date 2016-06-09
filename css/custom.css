@@ -41,15 +41,59 @@ p {
 .fadeout {
     animation-duration: 1s;
 }
+.filter {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.filter.colorfy {
+    background-color: rgba(0, 0, 0, 0);
+}
 .filter-load {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0);
     z-index: 1000;
 }
 .full-height {
     height: 100vh;
+}
+
+
+
+
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,1);
+    -webkit-transition: opacity ease-in-out 10s;
+    -moz-transition: opacity ease-in-out 10s;
+    -o-transition: opacity ease-in-out 10s;
+    -ms-transition: opacity ease-in-out 10s;
+    transition: opacity ease-in-out 10s;
+}
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;
+  top:50%;
+}
+#progstat{
+  font-size:0.7em;
+  letter-spacing: 3px;
+  position:absolute;
+  top:50%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:#fff;
 }
 
 /* ##     ## ##     ## ########   #######
@@ -95,27 +139,33 @@ h2.jumbo {
 }
 .btn-lg {
     letter-spacing: 2px;
-    font-size: 3em;
-    padding: 18px 28px;
+    font-size: 2em;
+    padding: 10px 5px;
     line-height: 1.3333333;
     border-radius: 2.5em;
+    position: static;
 }
 .btn-e {
-    padding: 0 70px;
+    padding: 0 20px;
 }
 .btn-primary {
     color: #fff;
-    background-color: rgba(170, 57, 57, 0.7);
+    background-color: rgba(60, 57, 230, 0.7);
     border-color: #fff;
     border: 0px;
+    margin: auto;
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary.hover, .btn-primary:hover, .btn-primary.active, .btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover {
     color: #fff;
-    background-color: rgba(170, 57, 57, .9);
+    background-color: rgba(60, 57, 230, .9);
     border-color: #fff;
 }
 .btn-holder {
     text-align: center;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    bottom: 20px;
 }
 .arrow {
     position: absolute;
@@ -420,12 +470,7 @@ a.scrollTo {
     opacity: 0;
     bottom: 0;
 }
-.filter {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-}
+
 
 /*COVER VIDEO helloworld*/
 
@@ -466,6 +511,7 @@ hr {
     color: black;
     font-size: 1.7em;
     margin-top: 15px;
+    text-align: center;
 }
 .ftLinks {
     position: absolute;
@@ -649,6 +695,9 @@ hr {
     .btn-lg {
         margin-bottom: 20px;
         margin-top: 20px;
+        position: fixed;
+        top: 50px;
+        right: 50px;
     }
     .btn-e {
         padding: 0 10px;

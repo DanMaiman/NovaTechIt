@@ -4,6 +4,10 @@ body {
 
 p {
   color: black;
+  text-align: left;
+}
+h1 {
+  color:black;
   text-align: center;
 }
 
@@ -23,7 +27,7 @@ p {
   position: static;
   background-size: cover;
   background-attachment: fixed;
-  height: 1100px;
+  height: 1700px;
   top: 0;
 }
 
@@ -34,13 +38,13 @@ p {
 .brother>h1 {
   font-size: 5em;
   position: relative;
-  top:35%;
+  top:20%;
   -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  color:white;
+  color:black;
   margin: 0;
 }
 
@@ -50,7 +54,7 @@ p {
 }
 
 .uncle {
-  top: 1100px;
+  top: 1700px;
   text-align: left;
   position: absolute;
   background: linear-gradient(rgba(255,255,255,0.8) 0%, white 100%);
@@ -107,8 +111,8 @@ form {
 @media (max-width: 767px) {
   .contLogo {max-width: 95%;}
   .brother>h1 {top:25%;}
-  .uncle {top:1000px;}
-  .brother {height: 1000px;}
+  .uncle {top:1400px;}
+  .brother {height: 1400px;}
   .bkImages {
       width: 150%;
       -moz-transform: translate(-30%,-20%);
