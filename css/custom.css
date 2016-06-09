@@ -23,7 +23,7 @@ h2 {
     font-size: 2em;
 }
 p {
-    font-size: 2.8em;
+    font-size: 2em;
     color: white;
 }
 .sep {
@@ -45,7 +45,7 @@ p {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0);
 }
 .filter.colorfy {
     background-color: rgba(0, 0, 0, 0);
@@ -398,7 +398,11 @@ a.scrollTo {
 }
 
 .fture {
-    min-height: 100vh;
+
+}
+
+.featCont {
+    padding: 0 50px;
 }
 
 .fp-tableCell>.container {
@@ -407,19 +411,20 @@ a.scrollTo {
 
 .fture h1 {
     margin: 0px 0px 20px 0px;
-    font-size: 6em;
 }
 .featLink {
-    text-shadow: 0px 0px 12px black;
-    color: #D46A6A;
+    /*text-shadow: 0px 0px 12px black;
+    color: #D46A6A;*/
     font-family: 'nobelReg', sans-serif;
+    margin-top: 30px;
 }
 .featLink:hover, .featlink:focus, .featLink:active, .featLink:active:hover, .featLink:active:focus {
     text-decoration: none;
-    color: #AA3939;
+    color: #ddd;
 }
-.feat {
-    /*position: absolute;*/
+p.feat {
+    width: 560px;
+
 }
 .animated {
     display: block;
@@ -428,25 +433,24 @@ a.scrollTo {
     text-align: left;
     top: 50px;
     left: 50px;
-    /*width: 70%;*/
 }
 .feat-head-r {
     text-align: left;
     top: 50px;
     left: 50px;
-    /*width: 70%;*/
+  
 }
 .feat-p-l {
     text-align: left;
     bottom: 50px;
     left: 50px;
-    /*width: 70%;*/
+
 }
 .feat-p-r {
     text-align: left;
     bottom: 50px;
     left: 50px;
-    /*width: 70%;*/
+
 }
 .bkImages {
     position: fixed;
