@@ -12,27 +12,8 @@ jQuery(document).ready(function($) {
 
     $(images).each(function(index) {
         var dataSrc = $(this).attr("data-src");
-        var imgSrc = "photos/" + dataSrc + ".jpg";
+        var imgSrc = "photos/" + dataSrc + "_c.jpg";
         $(this).attr("src", imgSrc);
-    });
-
- 
-    $("button.colorfy").click(function(){
-        if ($('div.filter').hasClass('colorfy')) {
-            $(images).each(function(index) {
-                var dataSrc = $(this).attr("data-src");
-                var imgSrc = "photos/" + dataSrc + ".jpg";
-                $(this).attr("src", imgSrc);
-                $('div.filter').removeClass('colorfy');
-            });
-        } else {
-            $(images).each(function(index) {
-                var dataSrc = $(this).attr("data-src");
-                var imgSrc = "photos/" + dataSrc + "_c.jpg";
-                $(this).attr("src", imgSrc);
-                $('div.filter').addClass('colorfy');
-            });
-        }
     });
     
 
