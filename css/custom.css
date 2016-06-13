@@ -464,12 +464,11 @@ p.feat {
     width: 100%;
 }
 .images img {
-    width: 100%;
+    width: 112%;
+    height: auto;
     position: fixed;
 }
-.images {
-    position: fixed;
-}
+
 #img-2 {
     opacity: 0;
 }
