@@ -149,17 +149,21 @@ h2.jumbo {
     padding: 0 20px;
 }
 .btn-primary {
+    background-image: url('../photos/details.png');
+    background-color: transparent;
     color: #fff;
-    background-color: rgba(60, 57, 230, 0.7);
+    /*background-color: rgba(60, 57, 230, 0.7);*/
     border-color: #fff;
     border: 0px;
     margin: auto;
     font-size: 45px;
+    height: 142px;
+    width: 375px;
 
 }
 .btn-primary.focus, .btn-primary:focus, .btn-primary.hover, .btn-primary:hover, .btn-primary.active, .btn-primary:active, .btn-primary:active:focus, .btn-primary:active:hover {
     color: #fff;
-    background-color: rgba(60, 57, 230, .9);
+    /*background-color: rgba(60, 57, 230, .9);*/
     border-color: #fff;
 }
 .btn-holder {
@@ -438,7 +442,7 @@ p.feat {
     text-align: left;
     top: 50px;
     left: 50px;
-  
+
 }
 .feat-p-l {
     text-align: left;
