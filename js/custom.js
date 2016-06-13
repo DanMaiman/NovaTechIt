@@ -16,6 +16,15 @@ jQuery(document).ready(function($) {
         $(this).attr("src", imgSrc);
     });
     
+    $("form").bind('submit',function(e){
+      e.preventDefault();
+      var formEmail=$("input[name=email]").val();
+      $("input[type=hidden][name=Email]").val(formEmail);
+      var formName=$("input[name=realname]").val();
+      $("input[type=hidden][name=Name]").val(formName);
+      $('form')[0].submit();
+    });
+
 
     if ($(window).width() < 767) {
         $(webm).each(function(index) {
