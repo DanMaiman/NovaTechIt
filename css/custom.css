@@ -741,6 +741,10 @@ hr {
     video {
         display: none;
     }
+
+    p.feat {
+        width:90%;
+    }
     .feat {
         position: static;
         display: block;
