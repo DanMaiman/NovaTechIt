@@ -126,11 +126,11 @@ form {
 @media (max-width: 450px)  {
      .bkImages {
       width: 300%;
-      -moz-transform: translate(-55%);
-      -webkit-transform: translateX(-55%);
-      -ms-transform: translateX(-55%);
-      -o-transform: translateX(-55%);
-      transform: translateX(-55%);
+      -moz-transform: translate(-35%);
+      -webkit-transform: translateX(-35%);
+      -ms-transform: translateX(-35%);
+      -o-transform: translateX(-35%);
+      transform: translateX(-35%);
     }
 
 }

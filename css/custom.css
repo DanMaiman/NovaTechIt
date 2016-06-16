@@ -45,7 +45,7 @@ p {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .filter.colorfy {
     background-color: rgba(0, 0, 0, 0);
@@ -751,6 +751,13 @@ hr {
         text-align: center;
         margin: 0 auto;
     }
+    .featCont {
+        padding: 0 15px;
+    }
+    .featLink>img {
+        width: 100%;
+    }
+
     .fture h1 {
         margin: 0px auto 20px auto;
         font-size: 3em;
@@ -780,7 +787,7 @@ hr {
         right: auto;
         width: 90%;
     }
-    /*######  #######   #######  ######## ######## ########
+/*######  #######   #######  ######## ######## ########
 ##       ##     ## ##     ##    ##    ##       ##     ##
 ##       ##     ## ##     ##    ##    ##       ##     ##
 ######   ##     ## ##     ##    ##    ######   ########
