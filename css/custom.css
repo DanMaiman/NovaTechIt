@@ -26,6 +26,14 @@ p {
     font-size: 2em;
     color: white;
 }
+
+.purple {
+  text-align: right;
+  padding-top: 10px;
+  width: 560px;
+}
+
+
 .sep {
     width: 90%;
 }
