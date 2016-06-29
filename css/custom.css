@@ -464,8 +464,7 @@ p.feat {
     width: 100%;
 }
 .images img {
-    width: 112%;
-    height: auto;
+    width: 100%;
     position: fixed;
 }
 .images {
