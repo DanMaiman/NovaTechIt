@@ -17,6 +17,10 @@ p {
     width: 100%;
     top: 0;
 }
+
+.bkImages{
+    top:-300px;
+}
 .brother>p {
     margin: 0;
 }

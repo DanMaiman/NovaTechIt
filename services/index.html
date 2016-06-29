@@ -120,13 +120,13 @@
 -->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-
+    
     <div class="brother one">
         <h1>
         </h1>
         <img class="bkImages" src="../photos/serverroom2.jpg" data-0="top:-300px;" data-2500="top:-1000px;">
     </div>
-
+    <div class="skrollr-body" id="skrollr-body">
     <div class="uncle" id="two">
         <div class="container">
             <p>
@@ -223,7 +223,7 @@
                 <hr>
             </div>
         </div>
-    </div>
+    </div></div>
     
 
     <!--
@@ -245,7 +245,14 @@
     <script type="text/javascript" src="../js/skrollr.min.js"></script>
     <script src="../js/custom.js"></script>
     <script type="text/javascript">
-        skrollr.init();
+        var s = skrollr.init();
+    </script>
+    <script type="text/javascript">
+    //http://detectmobilebrowsers.com/ + tablets
+    if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+        var s = skrollr.init();
+        s.destroy();
+    }
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
