@@ -19,7 +19,7 @@ p {
 }
 
 .bkImages{
-    top:-300px;
+    top:0px;
 }
 .brother>p {
     margin: 0;
@@ -41,11 +41,6 @@ p {
     position: absolute;
     background: rgba(255, 255, 255, 0.9);
     background-size: cover;
-    -moz-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    transform: translateY(-50%);
     width: 100%;
 }
 .bullet {
@@ -57,26 +52,26 @@ p {
     
 }
 #two {
-    top: 800px;
+    top: 400px;
 }
 .three {
     
 }
 #four {
-    top: 1600px;
+    top: 1200px;
 }
 .five {
     
 }
 #six {
-    top: 2400px;
+    top: 2200px;
 }
 .seven {
     
-    height: 1100px;
+    height: 1500px;
 }
 #eight {
-    top: 3500px;
+    top: 3900px;
     background: linear-gradient(rgba(255, 255, 255, 0.8) 0%, white 90%);
     -moz-transform: translateY(-50%);
     -webkit-transform: translateY(-100%);
@@ -89,6 +84,15 @@ p {
     z-index: 100;
 }
 @media screen and (max-width: 767px) {
+    .bkImages {
+    width: 200%;
+    top: -260px;
+    -webkit-transform: translateX(-24%);
+    -ms-transform: translateX(-24%);
+    -o-transform: translateX(-24%);
+    transform: translateX(-24%);
+    }
+
     .one {
         height: 600px;
     }
@@ -96,19 +100,19 @@ p {
         background-position: -95%;
     }
     .seven {
-        height: 900px;
+        height: 1400px;
         background-position: -90%;
     }
     #two {
-        top: 600px;
+        top: 400px;
     }
     #four {
-        top: 1400px;
+        top: 1100px;
     }
     #six {
-        top: 2200px;
+        top: 2100px;
     }
     #eight {
-        top: 3100px;
+        top: 3600px;
     }
 }
