@@ -28,8 +28,8 @@ p {
 }
 
 .purple {
-  text-align: right;
-  padding-top: 10px;
+  text-align: left;
+  /*padding-top: 10px;*/
   width: 560px;
 }
 
