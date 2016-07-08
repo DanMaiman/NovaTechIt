@@ -18,6 +18,7 @@ nav {
 h1 {
     font-family: 'Montserrat', sans-serif;
     color: white;
+    font-size: 40px;
 }
 h2 {
     font-size: 2em;
@@ -434,8 +435,8 @@ a.scrollTo {
     text-decoration: none;
     color: #ddd;
 }
-p.feat {
-    width: 560px;
+.feat {
+    max-width: 560px;
 
 }
 .animated {
@@ -767,7 +768,7 @@ hr {
         padding: 0 15px;
     }
     .featLink>img {
-        
+
     }
 
     .purple {
