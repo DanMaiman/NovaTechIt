@@ -436,7 +436,7 @@ a.scrollTo {
     color: #ddd;
 }
 .feat {
-    max-width: 560px;
+    /*max-width: 560px;*/
 
 }
 .animated {
