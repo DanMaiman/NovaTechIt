@@ -383,7 +383,7 @@ a.scrollTo {
     color: black;
 }
 .navbar-default .navbar-nav>li>a {
-    line-height: 91px;
+    line-height: 60px;
 }
 .hvr-overline-from-center:before {
     background: #AA3939;
@@ -613,7 +613,7 @@ hr {
         font-size: 2em;
     }
     .back .navbar-nav>li>a {
-        line-height: 71px;
+        line-height: 40px;
     }
     .navbar-brand>img {
         height: 71px;
