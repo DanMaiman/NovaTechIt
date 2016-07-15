@@ -28,6 +28,10 @@ p {
     color: white;
 }
 
+.align-left {
+    text-align: left;
+}
+
 .purple {
   text-align: left;
   /*padding-top: 10px;*/
@@ -379,13 +383,16 @@ a.scrollTo {
     color: black;
 }
 .navbar-default .navbar-nav>li>a {
-    line-height: 60px;
+    line-height: 91px;
 }
 .hvr-overline-from-center:before {
     background: #AA3939;
 }
 .navbar-brand>img {
-    height: 60px;
+    height: 91px;
+}
+.navbar-brand {
+    padding: 0;
 }
 
 /*######   #######  ########  ##    ##
@@ -606,10 +613,10 @@ hr {
         font-size: 2em;
     }
     .back .navbar-nav>li>a {
-        line-height: 40px;
+        line-height: 71px;
     }
     .navbar-brand>img {
-        height: 40px;
+        height: 71px;
     }
 }
 
@@ -659,7 +666,7 @@ hr {
     }
     /* Navbar */
     .navbar-brand>img {
-        height: 30px;
+        height: 51px;
     }
     .navbar-brand {
         padding: 10px 0;

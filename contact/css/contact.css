@@ -11,6 +11,15 @@ h1 {
   text-align: center;
 }
 
+.align-left {
+  text-align: left;
+}
+.navbar-brand>img {
+    height: 91px;
+}
+.navbar-brand {
+    padding: 0;
+}
 
 #home img {
   height: 50px;

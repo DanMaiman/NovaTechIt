@@ -4,6 +4,13 @@ body {
 p {
     color: black;
 }
+
+.navbar-brand>img.about-logo {
+    height: 91px;
+}
+.navbar-brand {
+    padding: 0;
+}
 #home img {
     height: 50px;
 }
