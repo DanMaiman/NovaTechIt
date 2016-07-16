@@ -578,11 +578,11 @@ hr {
 @media screen and (max-aspect-ratio: 3/2) and (min-width: 768px) {
     .images img {
         width: inherit;
-        height: 100vh;
+        /*height: 100vh;*/
     }
     .bkImages {
         width: inherit;
-        height: 100vh;
+        /*height: 100vh;*/
     }
 }
 
@@ -753,7 +753,7 @@ hr {
     a.scrollTo {
         bottom: -15px;
         display: inline;
-        !important
+        /*!important*/
     }
     video {
         display: none;
