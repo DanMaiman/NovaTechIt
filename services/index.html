@@ -120,11 +120,11 @@
 -->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-
+    
     <div class="brother one">
         <h1>
         </h1>
-        <img class="bkImages" src="../photos/serverroom2.jpg" data-0="top:-600px;" data-2500="top:-1100px;">
+        <img class="bkImages" src="../photos/serverroom2.jpg" data-0="top:0%;" data-2500="top:-50%;">
     </div>
     <div class="skrollr-body" id="skrollr-body">
     <div class="uncle" id="two">
@@ -148,7 +148,7 @@
     <div class="uncle" id="four">
         <div class="container">
             <p>
-               Lift your perspective and your business to new heights with our ultra HD aerial video and photography services.
+               Lift your perspective and your business to new heights with our ultra HD aerial video and photography services. 
             </p>
             <ul>
                 <li>Federal Aviation Administration registered and complaint with a Section 333 Grant of Exemption and a Certificate of Waiver or Authorization to operate.</li>
@@ -227,7 +227,7 @@
             </div>
         </div>
     </div></div>
-
+    
 
     <!--
   ####   ####  #####  ######
@@ -252,11 +252,11 @@
     </script>
     <script type="text/javascript">
     //http://detectmobilebrowsers.com/ + tablets
-    if(!(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
-    skrollr.init({
-    forceHeight: false
-    });
+    if((/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera)){
+        var s = skrollr.init();
+        s.destroy();
     }
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {var s = skrollr.init();s.destroy();}
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
