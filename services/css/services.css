@@ -10,6 +10,7 @@ p {
     padding-top: 30px;
 }
 .brother {
+    text-align: center;
     position: static;
     background-size: cover;
     background-attachment: fixed;
@@ -114,5 +115,13 @@ p {
     }
     #eight {
         top: 3600px;
+    }
+}
+
+@media screen and (max-aspect-ratio: 3/2) and (min-width: 768px) {
+    .bkImages {
+        width: 200%;
+        height: initial;
+        transform: translateX(-25%);
     }
 }

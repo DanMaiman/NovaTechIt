@@ -124,7 +124,7 @@
     <div class="brother one">
         <h1>
         </h1>
-        <img class="bkImages" src="../photos/serverroom2.jpg" data-0="top:-600px;" data-2500="top:-1100px;">
+        <img class="bkImages" src="../photos/serverroom2.jpg" data-0="top:0%;" data-2500="top:-50%;">
     </div>
     <div class="skrollr-body" id="skrollr-body">
     <div class="uncle" id="two">
@@ -256,6 +256,7 @@
         var s = skrollr.init();
         s.destroy();
     }
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {var s = skrollr.init();s.destroy();}
     </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
