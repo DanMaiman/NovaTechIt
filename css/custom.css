@@ -503,7 +503,6 @@ a.scrollTo {
 
 video {
     position: absolute;
-    bottom: 0;
     left: 0;
     z-index: -100;
     background: url('../photos/deepspace.png') no-repeat;
@@ -511,6 +510,9 @@ video {
     transition: 1s opacity;
     overflow: hidden;
     min-height: 100vh
+}
+video.space {
+    bottom: 0;
 }
 
 /*######  #######   #######  ######## ######## ########
@@ -777,9 +779,11 @@ hr {
     }
 
     .purple {
-      text-align: right;
+      text-align: left;
       padding-top: 10px;
       width: 100%;
+      margin: 0 auto 0 auto;
+      width: 90%;
     }
 
     .fture h1 {
