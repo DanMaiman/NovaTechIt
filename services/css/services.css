@@ -87,7 +87,6 @@ p {
 @media screen and (max-width: 767px) {
     .bkImages {
     width: 200%;
-    top: -260px;
     -webkit-transform: translateX(-24%);
     -ms-transform: translateX(-24%);
     -o-transform: translateX(-24%);
