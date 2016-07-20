@@ -170,6 +170,21 @@ jQuery(document).ready(function($) {
             $(".filter-load").css("opacity", 0.3);
         }
     });*/
+    var u = $("#six");
+    var h = u.outerHeight();
+    var offset = u.offset().top;
+    var b = offset + h;
+
+              console.log(h);
+
+      $(window).scroll(function() {
+        var scrollPos = $(window).scrollTop();
+          if ( scrollPos >= b ) {
+            console.log("hi");
+          }
+
+      });
+
 
 });
 
