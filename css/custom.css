@@ -61,6 +61,7 @@ p {
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.3);
     transition: background-color 1s;
+    z-index: 3;
 }
 .filter.colorfy {
     background-color: rgba(0, 0, 0, 0);
@@ -473,6 +474,7 @@ a.scrollTo {
     left: 50px;
 
 }
+
 .bkImages {
     position: fixed;
     left: 0;
@@ -483,27 +485,29 @@ a.scrollTo {
 .images img {
     width: 107%;
     position: fixed;
+    z-index: 2;
 }
 .images {
     position: fixed;
 }
 #img-2 {
     opacity: 0;
+    z-index: 0;
 }
 #img-3 {
     opacity: 0;
 }
 #img-4 {
     opacity: 0;
-    bottom: 0;
 }
 
 
 /*COVER VIDEO helloworld*/
 
-video {
+video.space {
     position: absolute;
     left: 0;
+    bottom: 0;
     z-index: -100;
     background: url('../photos/deepspace.png') no-repeat;
     background-size: cover;
@@ -511,8 +515,15 @@ video {
     overflow: hidden;
     min-height: 100vh
 }
-video.space {
-    bottom: 0;
+video.arial {
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    background: url('../photos/deepspace.png') no-repeat;
+    background-size: cover;
+    transition: 1s opacity;
+    overflow: hidden;
+    min-height: 100vh
 }
 
 /*######  #######   #######  ######## ######## ########
@@ -581,7 +592,7 @@ hr {
 @media screen and (max-aspect-ratio: 3/2) and (min-width: 768px) {
     .images img {
         width: inherit;
-        /*height: 100vh;*/
+        height: 100vh;
     }
     .bkImages {
         width: inherit;
@@ -620,6 +631,9 @@ hr {
     }
     .navbar-brand>img {
         height: 71px;
+    }
+    .ftImage {
+        bottom: 0;
     }
 }
 
@@ -663,6 +677,7 @@ hr {
     }
     .filter {
         height: 1000%;
+        z-index: 3;
     }
     .filter-load {
         height: 1000%;

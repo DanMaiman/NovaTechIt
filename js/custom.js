@@ -27,17 +27,7 @@ jQuery(document).ready(function($) {
 
 
     if ($(window).width() < 767) {
-        $(webm).each(function(index) {
-            var dataWebmSrc = $(this).attr("data-webmsrc");
-            var webmSrc = dataWebmSrc;
-            $(this).attr("src", webmSrc);
-            console.log(dataWebmSrc);
-        });
-        $(mp4).each(function(index) {
-            var dataMp4Src = $(this).attr("data-mp4src");
-            var mp4Src = dataMp4Src;
-            $(this).attr("src", mp4Src);
-        });
+        $('video').remove();
     }
 
     $(".scrollTo").click(function() {
