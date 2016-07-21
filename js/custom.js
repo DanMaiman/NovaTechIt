@@ -180,7 +180,7 @@ jQuery(document).ready(function($) {
       $(window).scroll(function() {
         var windowScroll = $(window).scrollTop();
         if ( windowScroll > 2121) {
-              $(".bkImages").attr("src", "../photos/aerial.jpg");
+              $(".bkImages").attr("src", "../photos/river.jpg");
           } else {
               $(".bkImages").attr("src","../photos/serverroom2.jpg");
           }
