@@ -175,15 +175,16 @@ jQuery(document).ready(function($) {
     var offset = u.offset().top;
     var b = offset + h;
 
-              console.log(h);
+              console.log("hey");
 
       $(window).scroll(function() {
-        var scrollPos = $(window).scrollTop();
-          if ( scrollPos >= b ) {
-            console.log("hi");
+        var windowScroll = $(window).scrollTop();
+        if ( windowScroll > 2121) {
+              $(".bkImages").attr("src", "../photos/aerial.jpg");
+          } else {
+              $(".bkImages").attr("src","../photos/serverroom2.jpg");
           }
-
-      });
+});
 
 
 });
@@ -218,5 +219,4 @@ jQuery(document).ready(function($) {
       tImg.src     = img[i].src;
     }
   }
-  document.addEventListener('DOMContentLoaded', loadbar, false);
-}());
+  document.addEventListener('DOMContentLoaded', loadbar, false);}());
