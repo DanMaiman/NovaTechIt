@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--
-   ######   #######  ##    ## ########    ###     ######  ########
-  ##    ## ##     ## ###   ##    ##      ## ##   ##    ##    ##
-  ##       ##     ## ####  ##    ##     ##   ##  ##          ##
-  ##       ##     ## ## ## ##    ##    ##     ## ##          ##
-  ##       ##     ## ##  ####    ##    ######### ##          ##
-  ##    ## ##     ## ##   ###    ##    ##     ## ##    ##    ##
-   ######   #######  ##    ##    ##    ##     ##  ######     ##
- -->
+log-in
+  -->
 
 <head>
     <meta charset="utf-8">
@@ -43,7 +37,7 @@
 
     <!-- Custom styles for this template -->
     <link href="../css/custom.css" rel="stylesheet">
-    <link href="css/contact.css" rel="stylesheet">
+    <link href="css/log-in.css" rel="stylesheet">
 
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
@@ -52,31 +46,31 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-   <![endif]-->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
 <!--
-#####   ####  #####  #   #
-#    # #    # #    #  # #
-#####  #    # #    #   #
-#    # #    # #    #   #
-#    # #    # #    #   #
-#####   ####  #####    #
--->
+ #####   ####  #####  #   #
+ #    # #    # #    #  # #
+ #####  #    # #    #   #
+ #    # #    # #    #   #
+ #    # #    # #    #   #
+ #####   ####  #####    #
+ -->
 
 <body>
 
     <!--
-#    #   ##   #    # #####    ##   #####
-##   #  #  #  #    # #    #  #  #  #    #
-# #  # #    # #    # #####  #    # #    #
-#  # # ###### #    # #    # ###### #####
-#   ## #    #  #  #  #    # #    # #   #
-#    # #    #   ##   #####  #    # #    #
--->
+ #    #   ##   #    # #####    ##   #####
+ ##   #  #  #  #    # #    #  #  #  #    #
+ # #  # #    # #    # #####  #    # #    #
+ #  # # ###### #    # #    # ###### #####
+ #   ## #    #  #  #  #    # #    # #   #
+ #    # #    #   ##   #####  #    # #    #
+ -->
 
     <nav class="back navbar navbar-default navbar-fixed-top nav-down">
         <div class="container">
@@ -111,65 +105,52 @@
     </nav>
 
     <!--
-#    #   ##   # #    #
-##  ##  #  #  # ##   #
-# ## # #    # # # #  #
-#    # ###### # #  # #
-#    # #    # # #   ##
-#    # #    # # #    #
--->
+ #    #   ##   # #    #
+ ##  ##  #  #  # ##   #
+ # ## # #    # # # #  #
+ #    # ###### # #  # #
+ #    # #    # # #   ##
+ #    # #    # # #    #
+ -->
+
+<div class="fadeIn">
+    <div id="loginModal" class="modal show" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                    <h1 class="text-center"></h1>
+                </div>
+                <div class="modal-body">
+                    <form class="form col-md-12 center-block">
+                        <div class="form-group">
+                            <input type="text" class="form-control input-lg" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control input-lg" placeholder="Password">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-primary btn-lg btn-block">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <!--<div class="col-md-12">
+                        <button class="btn" data-dismiss="modal" aria-hidden="true">cancel</button>
+                    </div>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!--End-->
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
 
     <div class="brother one">
-
-        <img class="bkImages contImg" src="../photos/contact.jpg">
+        <img class="bkImages" src="../photos/biz.jpg">
     </div>
 
-    <div class="uncle" id="two">
-        <div class="container">
-            <h1>Contact Us</h1>
-            <p>
-                At <strong>novatech</strong> we are here to help you with all your project management needs, including IT services, aerial video and control system wiring. While we certainly enjoy working locally in South Florida, we are also ready at
-                a moments notice to travel to you.
-                <br>
-                <br> Have a question, inquiry or feedback? Use this form below and we will get back to you surprisingly soon. Promise.</p>
-            <form class="form-horizontal" action="http://www.novatechit.com/cgi-bin/FormMail.pl" method="post">
-                <input type="hidden" name="subject" value="From the feedback form" />
-                <input type="hidden" id="Name" name="Name" value="" />
-                <input type="hidden" id="emailAddress" name="Email" value="" />
-                <div class="form-group form-group-lg">
-                    <div class="col-sm-6">
-                        <label for="inputName1" class="control-label"></label>
-                        <input name="realname" type="text" class="form-control" id="inputName1" placeholder="Contact Name">
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="inputComp1" class="control-label"></label>
-                        <input name="Company" type="text" class="form-control" id="inputComp1" placeholder="Company">
-                    </div>
-                </div>
-                <div class="form-group form-group-lg">
-                    <div class="col-sm-6">
-                        <label for="inputEmail1" class="control-label"></label>
-                        <input name="email" type="text" class="form-control" id="inputEmail1" placeholder="Email">
-                    </div>
-                    <div class="col-sm-6">
-                        <label for="inputPhone1" class="control-label"></label>
-                        <input name="Phone" type="text" class="form-control" id="inputPhone1" placeholder="Phone">
-                    </div>
-                </div>
-                <div class="form-group form-group-lg">
-                    <div class="col-sm-12">
-                        <label for="inputMessage" class="control-label"></label>
-                        <textarea name="Message" class="form-control" id="inputMessage" rows="3" placeholder="Message"></textarea>
-                    </div>
-                </div>
-                <button name="message" id="message" type="submit" class="btn btn-default message">Submit</button>
-            </form><br>
-            <p>You don't like forms? Give us a call!<br>(561) 290 - 0044</p>
-
-        </div>
-    </div>
 
     <!--End-->
 
@@ -195,20 +176,22 @@
                     <a href="../services" class="bulleta hvr-float-shadow">Services</a>
                     <a href="../contact" class="bulleta hvr-float-shadow">Contact Us</a>
                     <a href="../about" class="bulleta hvr-float-shadow">About</a>
-                    <a href="../log-in" class="bulleta hvr-float-shadow">Log In</a>
+                    <a href="#" class="bulleta hvr-float-shadow">Log In</a>
                 </div>
                 <hr>
+                <p class="clear"></p>
             </div>
         </div>
     </div>
 
+
     <!--
- ####   ####  #####  ######
+####   ####  #####  ######
 #    # #    # #    # #
 #      #    # #    # #####
 #      #    # #####  #
 #    # #    # #   #  #
- ####   ####  #    # ######
+####   ####  #    # ######
 -->
 
     <!-- Bootstrap core JavaScript
@@ -219,7 +202,6 @@
     <script src="../js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../js/jquery.fullPage.js"></script>
     <script src="../js/custom.js"></script>
-    <script src="js/contact.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../js/ie10-viewport-bug-workaround.js"></script>
 </body>

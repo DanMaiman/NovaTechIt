@@ -364,7 +364,7 @@ a.scrollTo {
 #logo {
     height: 300px;
     max-height: 500px;
-    margin: 0px auto 50px auto;
+    /*margin: 0px auto 50px auto;*/
     background-color: transparent;
 }
 .home {
@@ -740,7 +740,7 @@ hr {
     .btn-lg {
         margin-bottom: 20px;
         margin-top: 20px;
-        position: fixed;
+        position: inherit;
         top: 50px;
         right: 50px;
     }
