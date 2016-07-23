@@ -166,24 +166,26 @@ jQuery(document).ready(function($) {
             $(".filter-load").css("opacity", 0.3);
         }
     });*/
-    var u = $("#six");
-    var h = u.outerHeight();
-    var offset = u.offset().top;
-    var b = offset + h/2;
+    
+    if ($('body').hasClass('services')) {
+      var u = $("#six");
+      var h = u.outerHeight();
+      var offset = u.offset().top;
+      var b = offset + h/2;
 
-    console.log(offset);
-    console.log(h);
-    console.log(b);
+      console.log(offset);
+      console.log(h);
+      console.log(b);
 
-      $(window).scroll(function() {
-        var windowScroll = $(window).scrollTop();
-        if ( windowScroll > b) {
-              $("#img-2").addClass('fadeIn').removeClass('fadeOut');
-          } else {
-              $("#img-2").addClass('fadeOut').removeClass('fadeIn');
-          }
-});
-
+        $(window).scroll(function() {
+          var windowScroll = $(window).scrollTop();
+          if ( windowScroll > b) {
+                $("#img-2").addClass('fadeIn animated').removeClass('fadeOut');
+            } else {
+                $("#img-2").addClass('fadeOut').removeClass('fadeIn');
+            }
+      });
+    }
 
 });
 
