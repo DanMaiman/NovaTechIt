@@ -10,11 +10,7 @@ jQuery(document).ready(function($) {
     var navbarHeight = $('.back.navbar').outerHeight();
     $('#img-1').addClass('fadeIn');
 
-    $(images).each(function(index) {
-        var dataSrc = $(this).attr("data-src");
-        var imgSrc = "photos/" + dataSrc + ".jpg";
-        $(this).attr("src", imgSrc);
-    });
+
 
     $("form").bind('submit',function(e){
       e.preventDefault();
@@ -173,16 +169,18 @@ jQuery(document).ready(function($) {
     var u = $("#six");
     var h = u.outerHeight();
     var offset = u.offset().top;
-    var b = offset + h;
+    var b = offset + h/2;
 
-              console.log("hey");
+    console.log(offset);
+    console.log(h);
+    console.log(b);
 
       $(window).scroll(function() {
         var windowScroll = $(window).scrollTop();
-        if ( windowScroll > 2121) {
-              $(".bkImages").attr("src", "../photos/river.jpg");
+        if ( windowScroll > b) {
+              $("#img-2").addClass('fadeIn').removeClass('fadeOut');
           } else {
-              $(".bkImages").attr("src","../photos/serverroom2.jpg");
+              $("#img-2").addClass('fadeOut').removeClass('fadeIn');
           }
 });
 
