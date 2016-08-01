@@ -86,8 +86,8 @@
         <img class="ftImage animated" id="img-1" data-img="2" src="photos/office.jpg">
         <img class="ftImage animated" id="img-2" data-img="3" src="photos/aerial.jpg">
         <video autoplay loop class="fillWidth arial">
-                <source class="mp4" data-mp4src="" type="video/mp4" src="video/niagra.mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                <source class="webm" data-webmsrc="" type="video/webm" src="video/NiagFalls_loop_wm_201602207.webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source class="mp4" data-mp4src="" type="video/mp4" src="video/niagra.mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
+            <source class="webm" data-webmsrc="" type="video/webm" src="video/NiagFalls_loop_wm_201602207.webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>
         <img class="ftImage animated fadeOut" id="img-3" data-img="4" src="photos/network.jpg">
         <img class="ftImage animated fadeOut" id="img-4" data-img="5" src="photos/cctv2.jpg">
@@ -154,7 +154,7 @@
                                 <a class="hvr-overline-from-center" href="about">About</a>
                             </li>
                             <li id="log-in">
-                                <a class="hvr-overline-from-center" href="#log-in">Log In</a>
+                                <a data-toggle="modal" data-target="#myModal" class="hvr-overline-from-center">Log In</a>
                             </li>
                         </ul>
                     </div>
@@ -195,7 +195,9 @@
         <div class="section fture" id="two">
             <div class="container featCont">
                 <h1 class="feat feat-h feat-head-l init" data-index="2"><strong>PMP<sup>&reg;</sup> certified IT Project Management </strong></h1>
-                    <div class="purple"><a href="services/#two" class="featLink"><img src="photos/more.png"></a></div>
+                <div class="purple">
+                    <a href="services/#two" class="featLink"><img src="photos/more.png"></a>
+                </div>
             </div>
         </div>
 
@@ -204,7 +206,9 @@
         <div class="section fture" id="three">
             <div class="container featCont">
                 <h1 class="feat feat-h feat-head-r init" data-index="3"><strong>Aerial Technology</strong></h1>
-                    <div class="purple"><a href="services/#eight" class="featLink"><img src="photos/more.png"></a></div>
+                <div class="purple">
+                    <a href="services/#eight" class="featLink"><img src="photos/more.png"></a>
+                </div>
             </div>
         </div>
 
@@ -212,7 +216,9 @@
         <div class="section fture" id="four">
             <div class="container featCont">
                 <h1 class="feat feat-h feat-head-r init" data-index="4"><strong>State of Florida Licensed <br>Low Voltage Electrical Vendor</strong></h1>
-                    <div class="purple"><a href="services/#six" class="featLink"><img src="photos/more.png"></a></div>
+                <div class="purple">
+                    <a href="services/#six" class="featLink"><img src="photos/more.png"></a>
+                </div>
             </div>
         </div>
 
@@ -220,9 +226,46 @@
         <div class="section fture" id="six">
             <div class="container featCont">
                 <h1 class="feat feat-h feat-head-r init" data-index="6"><strong>CCTV/DVR Surveillance Systems</strong></h1>
-                    <div class="purple"><a href="services/#four" class="featLink"><img src="photos/more.png"></a></div>
+                <div class="purple">
+                    <a href="services/#four" class="featLink"><img src="photos/more.png"></a>
+                </div>
             </div>
         </div>
+
+        <!-- Modal -->
+    <div class="fadeIn">
+        <div class="modal fadeIn" id="myModal" role="dialog">
+            <div class="modal-dialog">
+
+                <!--MODAL CONTENT-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <!--<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>-->
+                        <h1 class="text-center"></h1>
+                    </div>
+                    <div class="modal-body">
+                        <form class="form col-md-12 center-block">
+                            <div class="form-group">
+                                <input type="text" class="form-control input-lg" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control input-lg" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <button type="button" id="sign">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <!--<div class="col-md-12">
+                     <button class="btn" data-dismiss="modal" aria-hidden="true">cancel</button>
+                 </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end of modal-->
 
 
         <!-- /END THE FEATURETTES -->

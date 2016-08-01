@@ -65,6 +65,23 @@ jQuery(document).ready(function($) {
     }
     //end of FadeNavBar
 
+    //hideModal
+    $(document).ready(function(){
+
+        $("#sign").click(function(){
+            $("#myModal").modal("hide");
+        });
+    });
+    //hide the navbar
+    $(function(){
+     var navMain = $(".navbar-collapse");
+
+     navMain.on("click", "a", null, function () {
+         navMain.collapse('hide');
+     });
+ });
+    //
+
     $('#fullpage').fullpage({
         anchors: ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'lastPage'],
         lockAnchors: true,
@@ -166,7 +183,7 @@ jQuery(document).ready(function($) {
             $(".filter-load").css("opacity", 0.3);
         }
     });*/
-    
+
     if ($('body').hasClass('services')) {
       var u = $("#six");
       var h = u.outerHeight();

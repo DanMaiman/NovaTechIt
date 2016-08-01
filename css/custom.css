@@ -28,6 +28,26 @@ p {
     font-size: 2em;
     color: white;
 }
+/*modal-start*/
+.modal.fadeIn {
+  animation-duration: 2s;
+  top: 100px;
+}
+#sign {
+background-color: white;
+font-size: 30px;
+width: 220px;
+height: 60px;
+border: none;
+background-color: maroon;
+color: white;
+border-radius:40px;
+}
+#sign:hover,#sign:active{
+  color: black;
+  background-color: transparent;
+}
+/*MODAL-END*/
 
 .align-left {
     text-align: left;
